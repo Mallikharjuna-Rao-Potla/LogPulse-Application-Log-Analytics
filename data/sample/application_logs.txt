@@ -1,0 +1,25 @@
+2026-10-01 00:01:04 WARNING [gateway] Rate limit nearing threshold latency_ms=304
+2026-10-01 00:05:21 WARNING [orders] Order processing delayed latency_ms=368
+2026-10-01 00:05:38 INFO [gateway] Request routed
+2026-10-01 00:06:44 Warning [payment] Retry attempt scheduled latency_ms=632
+2026-10-01 00:07:04 ERROR [payment] Transaction processing failed latency_ms=3598
+2026-10-01 00:08:24 Warning [orders] Order processing delayed latency_ms=-2982
+2026-10-01 00:08:41 error [payment] Transaction processing failed latency_ms=1329
+2026-10-01 00:08:51 info [inventory] Warehouse sync completed latency_ms=190
+2026-10-01 00:09:37 INFO [search] Search query completed latency_ms=86
+2026-10-01 00:10:11 INFO [notifications] Email notification sent latency_ms=106
+2026-10-01 00:11:06 INFO [ ] Push notification delivered latency_ms=109
+2026-10-01 00:11:57 ERROR [payment] Transaction processing failed latency_ms=1088
+2026-10-01 00:12:23 INFO [ORDERS] Order created latency_ms=21
+2026-09-30 20:45:41 INFO [notifications] Email notification sent latency_ms=124
+2026-10-01 00:15:23 INFO [payment] Payment authorized latency_ms=222
+2026-10-01 00:15:40 INFO [orders] Order created latency_ms=188
+2026-10-01 00:15:47 ERROR [payment] latency_ms=2393
+2026-10-01 00:16:01 INFO [gateway] Health check passed latency_ms=158
+2026-10-01 00:16:33 CRITICAL [ notifications ] Out of memory - service restarting latency_ms=6113
+2026-10-01 00:16:37 Warning [gateway] High memory usage latency_ms=432
+2026-10-01 00:16:48 WARNING [gateway] Rate limit nearing threshold latency_ms=482
+2026-09-30 20:19:31 info [gateway] Health check passed latency_ms=94
+2026-10-01 00:17:07 CRITICAL [gateway] Gateway unavailable latency_ms=4354
+2026-10-01 00:17:23 INFO [search] Search query completed latency_ms=77
+2026-10-01 00:17:27 INFO [orders] Order status updated latency_ms=205

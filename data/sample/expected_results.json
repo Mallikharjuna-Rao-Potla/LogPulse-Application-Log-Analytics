@@ -1,0 +1,156 @@
+{
+  "dataset": "sample",
+  "generator_version": "1.0",
+  "seed": 42,
+  "note": "Ground truth computed by the generator from its own labels, independent of the pipeline.",
+  "input_records": 100,
+  "json_records": 75,
+  "text_records": 25,
+  "outcomes": {
+    "inserted": 84,
+    "duplicates": 2,
+    "rejected": 14
+  },
+  "rejected_by_reason": {
+    "INVALID_EVENT_ID": 1,
+    "INVALID_LATENCY_TYPE": 1,
+    "INVALID_SEVERITY": 1,
+    "INVALID_TIMESTAMP": 1,
+    "LATENCY_EXCEEDS_MAX": 1,
+    "MISSING_EVENT_ID": 1,
+    "MISSING_MESSAGE": 1,
+    "MISSING_SERVICE_NAME": 1,
+    "MISSING_SEVERITY": 1,
+    "MISSING_TIMESTAMP": 1,
+    "NEGATIVE_LATENCY": 1,
+    "PARSE_ERROR_MALFORMED_JSON": 1,
+    "UNEXPECTED_SCHEMA": 1,
+    "UNKNOWN_SERVICE": 1
+  },
+  "late_records": 2,
+  "out_of_order_records": 6,
+  "database_state": {
+    "total_logs": 84,
+    "severity_counts": {
+      "INFO": 58,
+      "WARNING": 16,
+      "ERROR": 4,
+      "CRITICAL": 6
+    },
+    "error_count": 10,
+    "error_rate_pct": 11.9048,
+    "error_rate_by_service": {
+      "auth": {
+        "total": 13,
+        "errors": 2,
+        "error_rate_pct": 15.3846
+      },
+      "payment": {
+        "total": 8,
+        "errors": 5,
+        "error_rate_pct": 62.5
+      },
+      "inventory": {
+        "total": 9,
+        "errors": 0,
+        "error_rate_pct": 0.0
+      },
+      "orders": {
+        "total": 22,
+        "errors": 1,
+        "error_rate_pct": 4.5455
+      },
+      "notifications": {
+        "total": 7,
+        "errors": 1,
+        "error_rate_pct": 14.2857
+      },
+      "search": {
+        "total": 6,
+        "errors": 0,
+        "error_rate_pct": 0.0
+      },
+      "gateway": {
+        "total": 19,
+        "errors": 1,
+        "error_rate_pct": 5.2632
+      }
+    },
+    "latency": {
+      "count": 81,
+      "avg_ms": 611.4815,
+      "min_ms": 17.0,
+      "max_ms": 6176.0,
+      "p50_ms": 144.0,
+      "p95_ms": 3598.0,
+      "by_service": {
+        "auth": {
+          "count": 12,
+          "avg_ms": 626.0,
+          "min_ms": 36.0,
+          "max_ms": 3412.0,
+          "p50_ms": 119.5,
+          "p95_ms": 3045.7
+        },
+        "payment": {
+          "count": 8,
+          "avg_ms": 2408.25,
+          "min_ms": 222.0,
+          "max_ms": 6176.0,
+          "p50_ms": 1208.5,
+          "p95_ms": 5915.6
+        },
+        "inventory": {
+          "count": 9,
+          "avg_ms": 181.5556,
+          "min_ms": 64.0,
+          "max_ms": 645.0,
+          "p50_ms": 113.0,
+          "p95_ms": 488.6
+        },
+        "orders": {
+          "count": 21,
+          "avg_ms": 256.3333,
+          "min_ms": 17.0,
+          "max_ms": 2433.0,
+          "p50_ms": 147.0,
+          "p95_ms": 368.0
+        },
+        "notifications": {
+          "count": 7,
+          "avg_ms": 994.4286,
+          "min_ms": 60.0,
+          "max_ms": 6113.0,
+          "p50_ms": 106.0,
+          "p95_ms": 4391.0
+        },
+        "search": {
+          "count": 6,
+          "avg_ms": 171.8333,
+          "min_ms": 77.0,
+          "max_ms": 441.0,
+          "p50_ms": 101.5,
+          "p95_ms": 386.75
+        },
+        "gateway": {
+          "count": 18,
+          "avg_ms": 430.1667,
+          "min_ms": 34.0,
+          "max_ms": 4354.0,
+          "p50_ms": 139.0,
+          "p95_ms": 1062.8
+        }
+      }
+    },
+    "daily": {
+      "2026-09-30": {
+        "total": 2,
+        "errors": 0
+      },
+      "2026-10-01": {
+        "total": 82,
+        "errors": 10
+      }
+    }
+  }
+}

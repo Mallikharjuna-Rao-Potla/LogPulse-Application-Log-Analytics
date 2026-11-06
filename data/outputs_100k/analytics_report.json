@@ -1,0 +1,3844 @@
+{
+  "generated_at": "2026-11-06T11:08:42Z",
+  "database": "data/logpulse_demo.db",
+  "scope_note": "error/latency analytics cover ALL valid records currently in the database; 'operational' covers this run only.",
+  "operational": {
+    "run_id": "run_20261106T110838Z_9f291514",
+    "status": "SUCCESS",
+    "failure_reason": null,
+    "started_at": "2026-11-06T11:08:38Z",
+    "ended_at": "2026-11-06T11:08:41Z",
+    "files_total": 2,
+    "files_processed": 2,
+    "files_failed": 0,
+    "files_skipped": 0,
+    "blank_lines_skipped": 0,
+    "total_input_records": 100000,
+    "parsed_records": 98040,
+    "successfully_processed_records": 87710,
+    "duplicate_records": 2000,
+    "rejected_records": 10290,
+    "parse_failures": 1960,
+    "validation_failures": 8330,
+    "duplicate_id_conflicts": 0,
+    "late_records": 1960,
+    "out_of_order_records": 6384,
+    "rejected_by_reason": {
+      "INVALID_EVENT_ID": 490,
+      "INVALID_LATENCY_TYPE": 490,
+      "INVALID_SEVERITY": 980,
+      "INVALID_TIMESTAMP": 1470,
+      "LATENCY_EXCEEDS_MAX": 490,
+      "MISSING_EVENT_ID": 490,
+      "MISSING_MESSAGE": 490,
+      "MISSING_SERVICE_NAME": 490,
+      "MISSING_SEVERITY": 490,
+      "MISSING_TIMESTAMP": 490,
+      "NEGATIVE_LATENCY": 980,
+      "PARSE_ERROR_MALFORMED_JSON": 991,
+      "PARSE_ERROR_UNEXPECTED_FORMAT": 479,
+      "UNEXPECTED_SCHEMA": 490,
+      "UNKNOWN_SERVICE": 980
+    },
+    "processing_seconds": 3.0496,
+    "duration_seconds": 3.0511,
+    "throughput_records_per_sec": 32790.97
+  },
+  "database_totals": {
+    "processed_logs": 87710,
+    "rejected_logs": 10290,
+    "pipeline_runs": 1,
+    "processed_files": 2
+  },
+  "late_records_in_database": 1960,
+  "error_analytics": {
+    "total_logs": 87710,
+    "severity_counts": {
+      "INFO": 60363,
+      "WARNING": 15888,
+      "ERROR": 8301,
+      "CRITICAL": 3158
+    },
+    "error_count": 11459,
+    "error_rate_pct": 13.0646,
+    "error_rate_by_service": {
+      "auth": {
+        "total": 19060,
+        "errors": 2077,
+        "error_rate_pct": 10.8972
+      },
+      "gateway": {
+        "total": 17522,
+        "errors": 2387,
+        "error_rate_pct": 13.6229
+      },
+      "inventory": {
+        "total": 8831,
+        "errors": 1010,
+        "error_rate_pct": 11.437
+      },
+      "notifications": {
+        "total": 8812,
+        "errors": 966,
+        "error_rate_pct": 10.9623
+      },
+      "orders": {
+        "total": 14156,
+        "errors": 1538,
+        "error_rate_pct": 10.8647
+      },
+      "payment": {
+        "total": 12407,
+        "errors": 2765,
+        "error_rate_pct": 22.2858
+      },
+      "search": {
+        "total": 6922,
+        "errors": 716,
+        "error_rate_pct": 10.3438
+      }
+    },
+    "error_trend": {
+      "daily": [
+        {
+          "period": "2026-10-04",
+          "total": 16,
+          "errors": 1,
+          "error_rate_pct": 6.25
+        },
+        {
+          "period": "2026-10-05",
+          "total": 7349,
+          "errors": 944,
+          "error_rate_pct": 12.8453
+        },
+        {
+          "period": "2026-10-06",
+          "total": 7281,
+          "errors": 968,
+          "error_rate_pct": 13.2949
+        },
+        {
+          "period": "2026-10-07",
+          "total": 7324,
+          "errors": 1021,
+          "error_rate_pct": 13.9405
+        },
+        {
+          "period": "2026-10-08",
+          "total": 7351,
+          "errors": 912,
+          "error_rate_pct": 12.4065
+        },
+        {
+          "period": "2026-10-09",
+          "total": 7372,
+          "errors": 891,
+          "error_rate_pct": 12.0863
+        },
+        {
+          "period": "2026-10-10",
+          "total": 7379,
+          "errors": 964,
+          "error_rate_pct": 13.0641
+        },
+        {
+          "period": "2026-10-11",
+          "total": 7346,
+          "errors": 1005,
+          "error_rate_pct": 13.6809
+        },
+        {
+          "period": "2026-10-12",
+          "total": 7266,
+          "errors": 987,
+          "error_rate_pct": 13.5838
+        },
+        {
+          "period": "2026-10-13",
+          "total": 7375,
+          "errors": 976,
+          "error_rate_pct": 13.2339
+        },
+        {
+          "period": "2026-10-14",
+          "total": 7428,
+          "errors": 970,
+          "error_rate_pct": 13.0587
+        },
+        {
+          "period": "2026-10-15",
+          "total": 7406,
+          "errors": 949,
+          "error_rate_pct": 12.8139
+        },
+        {
+          "period": "2026-10-16",
+          "total": 6817,
+          "errors": 871,
+          "error_rate_pct": 12.7769
+        }
+      ],
+      "hourly": [
+        {
+          "period": "2026-10-04T19:00:00Z",
+          "total": 3,
+          "errors": 0,
+          "error_rate_pct": 0.0
+        },
+        {
+          "period": "2026-10-04T20:00:00Z",
+          "total": 5,
+          "errors": 0,
+          "error_rate_pct": 0.0
+        },
+        {
+          "period": "2026-10-04T21:00:00Z",
+          "total": 2,
+          "errors": 0,
+          "error_rate_pct": 0.0
+        },
+        {
+          "period": "2026-10-04T22:00:00Z",
+          "total": 4,
+          "errors": 1,
+          "error_rate_pct": 25.0
+        },
+        {
+          "period": "2026-10-04T23:00:00Z",
+          "total": 2,
+          "errors": 0,
+          "error_rate_pct": 0.0
+        },
+        {
+          "period": "2026-10-05T00:00:00Z",
+          "total": 305,
+          "errors": 29,
+          "error_rate_pct": 9.5082
+        },
+        {
+          "period": "2026-10-05T01:00:00Z",
+          "total": 309,
+          "errors": 43,
+          "error_rate_pct": 13.9159
+        },
+        {
+          "period": "2026-10-05T02:00:00Z",
+          "total": 319,
+          "errors": 50,
+          "error_rate_pct": 15.674
+        },
+        {
+          "period": "2026-10-05T03:00:00Z",
+          "total": 306,
+          "errors": 42,
+          "error_rate_pct": 13.7255
+        },
+        {
+          "period": "2026-10-05T04:00:00Z",
+          "total": 315,
+          "errors": 50,
+          "error_rate_pct": 15.873
+        },
+        {
+          "period": "2026-10-05T05:00:00Z",
+          "total": 306,
+          "errors": 48,
+          "error_rate_pct": 15.6863
+        },
+        {
+          "period": "2026-10-05T06:00:00Z",
+          "total": 289,
+          "errors": 33,
+          "error_rate_pct": 11.4187
+        },
+        {
+          "period": "2026-10-05T07:00:00Z",
+          "total": 295,
+          "errors": 38,
+          "error_rate_pct": 12.8814
+        },
+        {
+          "period": "2026-10-05T08:00:00Z",
+          "total": 304,
+          "errors": 40,
+          "error_rate_pct": 13.1579
+        },
+        {
+          "period": "2026-10-05T09:00:00Z",
+          "total": 303,
+          "errors": 40,
+          "error_rate_pct": 13.2013
+        },
+        {
+          "period": "2026-10-05T10:00:00Z",
+          "total": 295,
+          "errors": 29,
+          "error_rate_pct": 9.8305
+        },
+        {
+          "period": "2026-10-05T11:00:00Z",
+          "total": 298,
+          "errors": 45,
+          "error_rate_pct": 15.1007
+        },
+        {
+          "period": "2026-10-05T12:00:00Z",
+          "total": 299,
+          "errors": 41,
+          "error_rate_pct": 13.7124
+        },
+        {
+          "period": "2026-10-05T13:00:00Z",
+          "total": 306,
+          "errors": 45,
+          "error_rate_pct": 14.7059
+        },
+        {
+          "period": "2026-10-05T14:00:00Z",
+          "total": 317,
+          "errors": 38,
+          "error_rate_pct": 11.9874
+        },
+        {
+          "period": "2026-10-05T15:00:00Z",
+          "total": 313,
+          "errors": 47,
+          "error_rate_pct": 15.016
+        },
+        {
+          "period": "2026-10-05T16:00:00Z",
+          "total": 308,
+          "errors": 39,
+          "error_rate_pct": 12.6623
+        },
+        {
+          "period": "2026-10-05T17:00:00Z",
+          "total": 313,
+          "errors": 41,
+          "error_rate_pct": 13.099
+        },
+        {
+          "period": "2026-10-05T18:00:00Z",
+          "total": 323,
+          "errors": 41,
+          "error_rate_pct": 12.6935
+        },
+        {
+          "period": "2026-10-05T19:00:00Z",
+          "total": 312,
+          "errors": 35,
+          "error_rate_pct": 11.2179
+        },
+        {
+          "period": "2026-10-05T20:00:00Z",
+          "total": 303,
+          "errors": 27,
+          "error_rate_pct": 8.9109
+        },
+        {
+          "period": "2026-10-05T21:00:00Z",
+          "total": 311,
+          "errors": 35,
+          "error_rate_pct": 11.254
+        },
+        {
+          "period": "2026-10-05T22:00:00Z",
+          "total": 291,
+          "errors": 32,
+          "error_rate_pct": 10.9966
+        },
+        {
+          "period": "2026-10-05T23:00:00Z",
+          "total": 309,
+          "errors": 36,
+          "error_rate_pct": 11.6505
+        },
+        {
+          "period": "2026-10-06T00:00:00Z",
+          "total": 321,
+          "errors": 51,
+          "error_rate_pct": 15.8879
+        },
+        {
+          "period": "2026-10-06T01:00:00Z",
+          "total": 274,
+          "errors": 28,
+          "error_rate_pct": 10.219
+        },
+        {
+          "period": "2026-10-06T02:00:00Z",
+          "total": 307,
+          "errors": 43,
+          "error_rate_pct": 14.0065
+        },
+        {
+          "period": "2026-10-06T03:00:00Z",
+          "total": 311,
+          "errors": 37,
+          "error_rate_pct": 11.8971
+        },
+        {
+          "period": "2026-10-06T04:00:00Z",
+          "total": 294,
+          "errors": 42,
+          "error_rate_pct": 14.2857
+        },
+        {
+          "period": "2026-10-06T05:00:00Z",
+          "total": 308,
+          "errors": 42,
+          "error_rate_pct": 13.6364
+        },
+        {
+          "period": "2026-10-06T06:00:00Z",
+          "total": 289,
+          "errors": 37,
+          "error_rate_pct": 12.8028
+        },
+        {
+          "period": "2026-10-06T07:00:00Z",
+          "total": 285,
+          "errors": 45,
+          "error_rate_pct": 15.7895
+        },
+        {
+          "period": "2026-10-06T08:00:00Z",
+          "total": 303,
+          "errors": 37,
+          "error_rate_pct": 12.2112
+        },
+        {
+          "period": "2026-10-06T09:00:00Z",
+          "total": 287,
+          "errors": 45,
+          "error_rate_pct": 15.6794
+        },
+        {
+          "period": "2026-10-06T10:00:00Z",
+          "total": 303,
+          "errors": 40,
+          "error_rate_pct": 13.2013
+        },
+        {
+          "period": "2026-10-06T11:00:00Z",
+          "total": 314,
+          "errors": 37,
+          "error_rate_pct": 11.7834
+        },
+        {
+          "period": "2026-10-06T12:00:00Z",
+          "total": 313,
+          "errors": 35,
+          "error_rate_pct": 11.1821
+        },
+        {
+          "period": "2026-10-06T13:00:00Z",
+          "total": 296,
+          "errors": 34,
+          "error_rate_pct": 11.4865
+        },
+        {
+          "period": "2026-10-06T14:00:00Z",
+          "total": 315,
+          "errors": 38,
+          "error_rate_pct": 12.0635
+        },
+        {
+          "period": "2026-10-06T15:00:00Z",
+          "total": 311,
+          "errors": 47,
+          "error_rate_pct": 15.1125
+        },
+        {
+          "period": "2026-10-06T16:00:00Z",
+          "total": 270,
+          "errors": 33,
+          "error_rate_pct": 12.2222
+        },
+        {
+          "period": "2026-10-06T17:00:00Z",
+          "total": 304,
+          "errors": 43,
+          "error_rate_pct": 14.1447
+        },
+        {
+          "period": "2026-10-06T18:00:00Z",
+          "total": 317,
+          "errors": 41,
+          "error_rate_pct": 12.9338
+        },
+        {
+          "period": "2026-10-06T19:00:00Z",
+          "total": 315,
+          "errors": 49,
+          "error_rate_pct": 15.5556
+        },
+        {
+          "period": "2026-10-06T20:00:00Z",
+          "total": 306,
+          "errors": 42,
+          "error_rate_pct": 13.7255
+        },
+        {
+          "period": "2026-10-06T21:00:00Z",
+          "total": 317,
+          "errors": 39,
+          "error_rate_pct": 12.3028
+        },
+        {
+          "period": "2026-10-06T22:00:00Z",
+          "total": 306,
+          "errors": 42,
+          "error_rate_pct": 13.7255
+        },
+        {
+          "period": "2026-10-06T23:00:00Z",
+          "total": 315,
+          "errors": 41,
+          "error_rate_pct": 13.0159
+        },
+        {
+          "period": "2026-10-07T00:00:00Z",
+          "total": 319,
+          "errors": 51,
+          "error_rate_pct": 15.9875
+        },
+        {
+          "period": "2026-10-07T01:00:00Z",
+          "total": 300,
+          "errors": 49,
+          "error_rate_pct": 16.3333
+        },
+        {
+          "period": "2026-10-07T02:00:00Z",
+          "total": 305,
+          "errors": 52,
+          "error_rate_pct": 17.0492
+        },
+        {
+          "period": "2026-10-07T03:00:00Z",
+          "total": 325,
+          "errors": 43,
+          "error_rate_pct": 13.2308
+        },
+        {
+          "period": "2026-10-07T04:00:00Z",
+          "total": 319,
+          "errors": 45,
+          "error_rate_pct": 14.1066
+        },
+        {
+          "period": "2026-10-07T05:00:00Z",
+          "total": 306,
+          "errors": 44,
+          "error_rate_pct": 14.3791
+        },
+        {
+          "period": "2026-10-07T06:00:00Z",
+          "total": 294,
+          "errors": 44,
+          "error_rate_pct": 14.966
+        },
+        {
+          "period": "2026-10-07T07:00:00Z",
+          "total": 307,
+          "errors": 47,
+          "error_rate_pct": 15.3094
+        },
+        {
+          "period": "2026-10-07T08:00:00Z",
+          "total": 309,
+          "errors": 37,
+          "error_rate_pct": 11.9741
+        },
+        {
+          "period": "2026-10-07T09:00:00Z",
+          "total": 311,
+          "errors": 56,
+          "error_rate_pct": 18.0064
+        },
+        {
+          "period": "2026-10-07T10:00:00Z",
+          "total": 299,
+          "errors": 36,
+          "error_rate_pct": 12.0401
+        },
+        {
+          "period": "2026-10-07T11:00:00Z",
+          "total": 295,
+          "errors": 44,
+          "error_rate_pct": 14.9153
+        },
+        {
+          "period": "2026-10-07T12:00:00Z",
+          "total": 285,
+          "errors": 36,
+          "error_rate_pct": 12.6316
+        },
+        {
+          "period": "2026-10-07T13:00:00Z",
+          "total": 298,
+          "errors": 35,
+          "error_rate_pct": 11.745
+        },
+        {
+          "period": "2026-10-07T14:00:00Z",
+          "total": 298,
+          "errors": 36,
+          "error_rate_pct": 12.0805
+        },
+        {
+          "period": "2026-10-07T15:00:00Z",
+          "total": 294,
+          "errors": 49,
+          "error_rate_pct": 16.6667
+        },
+        {
+          "period": "2026-10-07T16:00:00Z",
+          "total": 313,
+          "errors": 34,
+          "error_rate_pct": 10.8626
+        },
+        {
+          "period": "2026-10-07T17:00:00Z",
+          "total": 311,
+          "errors": 48,
+          "error_rate_pct": 15.4341
+        },
+        {
+          "period": "2026-10-07T18:00:00Z",
+          "total": 317,
+          "errors": 41,
+          "error_rate_pct": 12.9338
+        },
+        {
+          "period": "2026-10-07T19:00:00Z",
+          "total": 296,
+          "errors": 34,
+          "error_rate_pct": 11.4865
+        },
+        {
+          "period": "2026-10-07T20:00:00Z",
+          "total": 306,
+          "errors": 38,
+          "error_rate_pct": 12.4183
+        },
+        {
+          "period": "2026-10-07T21:00:00Z",
+          "total": 317,
+          "errors": 40,
+          "error_rate_pct": 12.6183
+        },
+        {
+          "period": "2026-10-07T22:00:00Z",
+          "total": 305,
+          "errors": 35,
+          "error_rate_pct": 11.4754
+        },
+        {
+          "period": "2026-10-07T23:00:00Z",
+          "total": 295,
+          "errors": 47,
+          "error_rate_pct": 15.9322
+        },
+        {
+          "period": "2026-10-08T00:00:00Z",
+          "total": 301,
+          "errors": 37,
+          "error_rate_pct": 12.2924
+        },
+        {
+          "period": "2026-10-08T01:00:00Z",
+          "total": 308,
+          "errors": 36,
+          "error_rate_pct": 11.6883
+        },
+        {
+          "period": "2026-10-08T02:00:00Z",
+          "total": 296,
+          "errors": 36,
+          "error_rate_pct": 12.1622
+        },
+        {
+          "period": "2026-10-08T03:00:00Z",
+          "total": 319,
+          "errors": 50,
+          "error_rate_pct": 15.674
+        },
+        {
+          "period": "2026-10-08T04:00:00Z",
+          "total": 288,
+          "errors": 47,
+          "error_rate_pct": 16.3194
+        },
+        {
+          "period": "2026-10-08T05:00:00Z",
+          "total": 296,
+          "errors": 38,
+          "error_rate_pct": 12.8378
+        },
+        {
+          "period": "2026-10-08T06:00:00Z",
+          "total": 310,
+          "errors": 33,
+          "error_rate_pct": 10.6452
+        },
+        {
+          "period": "2026-10-08T07:00:00Z",
+          "total": 315,
+          "errors": 45,
+          "error_rate_pct": 14.2857
+        },
+        {
+          "period": "2026-10-08T08:00:00Z",
+          "total": 303,
+          "errors": 31,
+          "error_rate_pct": 10.231
+        },
+        {
+          "period": "2026-10-08T09:00:00Z",
+          "total": 320,
+          "errors": 51,
+          "error_rate_pct": 15.9375
+        },
+        {
+          "period": "2026-10-08T10:00:00Z",
+          "total": 314,
+          "errors": 40,
+          "error_rate_pct": 12.7389
+        },
+        {
+          "period": "2026-10-08T11:00:00Z",
+          "total": 317,
+          "errors": 40,
+          "error_rate_pct": 12.6183
+        },
+        {
+          "period": "2026-10-08T12:00:00Z",
+          "total": 311,
+          "errors": 41,
+          "error_rate_pct": 13.1833
+        },
+        {
+          "period": "2026-10-08T13:00:00Z",
+          "total": 314,
+          "errors": 45,
+          "error_rate_pct": 14.3312
+        },
+        {
+          "period": "2026-10-08T14:00:00Z",
+          "total": 311,
+          "errors": 27,
+          "error_rate_pct": 8.6817
+        },
+        {
+          "period": "2026-10-08T15:00:00Z",
+          "total": 287,
+          "errors": 35,
+          "error_rate_pct": 12.1951
+        },
+        {
+          "period": "2026-10-08T16:00:00Z",
+          "total": 304,
+          "errors": 30,
+          "error_rate_pct": 9.8684
+        },
+        {
+          "period": "2026-10-08T17:00:00Z",
+          "total": 302,
+          "errors": 36,
+          "error_rate_pct": 11.9205
+        },
+        {
+          "period": "2026-10-08T18:00:00Z",
+          "total": 313,
+          "errors": 33,
+          "error_rate_pct": 10.5431
+        },
+        {
+          "period": "2026-10-08T19:00:00Z",
+          "total": 302,
+          "errors": 40,
+          "error_rate_pct": 13.245
+        },
+        {
+          "period": "2026-10-08T20:00:00Z",
+          "total": 303,
+          "errors": 36,
+          "error_rate_pct": 11.8812
+        },
+        {
+          "period": "2026-10-08T21:00:00Z",
+          "total": 311,
+          "errors": 26,
+          "error_rate_pct": 8.3601
+        },
+        {
+          "period": "2026-10-08T22:00:00Z",
+          "total": 310,
+          "errors": 34,
+          "error_rate_pct": 10.9677
+        },
+        {
+          "period": "2026-10-08T23:00:00Z",
+          "total": 296,
+          "errors": 45,
+          "error_rate_pct": 15.2027
+        },
+        {
+          "period": "2026-10-09T00:00:00Z",
+          "total": 317,
+          "errors": 41,
+          "error_rate_pct": 12.9338
+        },
+        {
+          "period": "2026-10-09T01:00:00Z",
+          "total": 313,
+          "errors": 38,
+          "error_rate_pct": 12.1406
+        },
+        {
+          "period": "2026-10-09T02:00:00Z",
+          "total": 302,
+          "errors": 37,
+          "error_rate_pct": 12.2517
+        },
+        {
+          "period": "2026-10-09T03:00:00Z",
+          "total": 309,
+          "errors": 41,
+          "error_rate_pct": 13.2686
+        },
+        {
+          "period": "2026-10-09T04:00:00Z",
+          "total": 313,
+          "errors": 44,
+          "error_rate_pct": 14.0575
+        },
+        {
+          "period": "2026-10-09T05:00:00Z",
+          "total": 310,
+          "errors": 45,
+          "error_rate_pct": 14.5161
+        },
+        {
+          "period": "2026-10-09T06:00:00Z",
+          "total": 287,
+          "errors": 32,
+          "error_rate_pct": 11.1498
+        },
+        {
+          "period": "2026-10-09T07:00:00Z",
+          "total": 311,
+          "errors": 41,
+          "error_rate_pct": 13.1833
+        },
+        {
+          "period": "2026-10-09T08:00:00Z",
+          "total": 302,
+          "errors": 44,
+          "error_rate_pct": 14.5695
+        },
+        {
+          "period": "2026-10-09T09:00:00Z",
+          "total": 300,
+          "errors": 33,
+          "error_rate_pct": 11.0
+        },
+        {
+          "period": "2026-10-09T10:00:00Z",
+          "total": 311,
+          "errors": 40,
+          "error_rate_pct": 12.8617
+        },
+        {
+          "period": "2026-10-09T11:00:00Z",
+          "total": 300,
+          "errors": 27,
+          "error_rate_pct": 9.0
+        },
+        {
+          "period": "2026-10-09T12:00:00Z",
+          "total": 292,
+          "errors": 30,
+          "error_rate_pct": 10.274
+        },
+        {
+          "period": "2026-10-09T13:00:00Z",
+          "total": 313,
+          "errors": 37,
+          "error_rate_pct": 11.8211
+        },
+        {
+          "period": "2026-10-09T14:00:00Z",
+          "total": 309,
+          "errors": 32,
+          "error_rate_pct": 10.356
+        },
+        {
+          "period": "2026-10-09T15:00:00Z",
+          "total": 302,
+          "errors": 34,
+          "error_rate_pct": 11.2583
+        },
+        {
+          "period": "2026-10-09T16:00:00Z",
+          "total": 301,
+          "errors": 35,
+          "error_rate_pct": 11.6279
+        },
+        {
+          "period": "2026-10-09T17:00:00Z",
+          "total": 315,
+          "errors": 40,
+          "error_rate_pct": 12.6984
+        },
+        {
+          "period": "2026-10-09T18:00:00Z",
+          "total": 325,
+          "errors": 42,
+          "error_rate_pct": 12.9231
+        },
+        {
+          "period": "2026-10-09T19:00:00Z",
+          "total": 321,
+          "errors": 35,
+          "error_rate_pct": 10.9034
+        },
+        {
+          "period": "2026-10-09T20:00:00Z",
+          "total": 319,
+          "errors": 45,
+          "error_rate_pct": 14.1066
+        },
+        {
+          "period": "2026-10-09T21:00:00Z",
+          "total": 310,
+          "errors": 31,
+          "error_rate_pct": 10.0
+        },
+        {
+          "period": "2026-10-09T22:00:00Z",
+          "total": 300,
+          "errors": 40,
+          "error_rate_pct": 13.3333
+        },
+        {
+          "period": "2026-10-09T23:00:00Z",
+          "total": 290,
+          "errors": 27,
+          "error_rate_pct": 9.3103
+        },
+        {
+          "period": "2026-10-10T00:00:00Z",
+          "total": 306,
+          "errors": 33,
+          "error_rate_pct": 10.7843
+        },
+        {
+          "period": "2026-10-10T01:00:00Z",
+          "total": 308,
+          "errors": 53,
+          "error_rate_pct": 17.2078
+        },
+        {
+          "period": "2026-10-10T02:00:00Z",
+          "total": 295,
+          "errors": 34,
+          "error_rate_pct": 11.5254
+        },
+        {
+          "period": "2026-10-10T03:00:00Z",
+          "total": 331,
+          "errors": 34,
+          "error_rate_pct": 10.2719
+        },
+        {
+          "period": "2026-10-10T04:00:00Z",
+          "total": 305,
+          "errors": 33,
+          "error_rate_pct": 10.8197
+        },
+        {
+          "period": "2026-10-10T05:00:00Z",
+          "total": 304,
+          "errors": 47,
+          "error_rate_pct": 15.4605
+        },
+        {
+          "period": "2026-10-10T06:00:00Z",
+          "total": 300,
+          "errors": 40,
+          "error_rate_pct": 13.3333
+        },
+        {
+          "period": "2026-10-10T07:00:00Z",
+          "total": 315,
+          "errors": 37,
+          "error_rate_pct": 11.746
+        },
+        {
+          "period": "2026-10-10T08:00:00Z",
+          "total": 313,
+          "errors": 44,
+          "error_rate_pct": 14.0575
+        },
+        {
+          "period": "2026-10-10T09:00:00Z",
+          "total": 318,
+          "errors": 45,
+          "error_rate_pct": 14.1509
+        },
+        {
+          "period": "2026-10-10T10:00:00Z",
+          "total": 293,
+          "errors": 42,
+          "error_rate_pct": 14.3345
+        },
+        {
+          "period": "2026-10-10T11:00:00Z",
+          "total": 317,
+          "errors": 35,
+          "error_rate_pct": 11.041
+        },
+        {
+          "period": "2026-10-10T12:00:00Z",
+          "total": 312,
+          "errors": 36,
+          "error_rate_pct": 11.5385
+        },
+        {
+          "period": "2026-10-10T13:00:00Z",
+          "total": 307,
+          "errors": 40,
+          "error_rate_pct": 13.0293
+        },
+        {
+          "period": "2026-10-10T14:00:00Z",
+          "total": 309,
+          "errors": 40,
+          "error_rate_pct": 12.945
+        },
+        {
+          "period": "2026-10-10T15:00:00Z",
+          "total": 303,
+          "errors": 46,
+          "error_rate_pct": 15.1815
+        },
+        {
+          "period": "2026-10-10T16:00:00Z",
+          "total": 298,
+          "errors": 43,
+          "error_rate_pct": 14.4295
+        },
+        {
+          "period": "2026-10-10T17:00:00Z",
+          "total": 301,
+          "errors": 39,
+          "error_rate_pct": 12.9568
+        },
+        {
+          "period": "2026-10-10T18:00:00Z",
+          "total": 289,
+          "errors": 37,
+          "error_rate_pct": 12.8028
+        },
+        {
+          "period": "2026-10-10T19:00:00Z",
+          "total": 302,
+          "errors": 41,
+          "error_rate_pct": 13.5762
+        },
+        {
+          "period": "2026-10-10T20:00:00Z",
+          "total": 308,
+          "errors": 34,
+          "error_rate_pct": 11.039
+        },
+        {
+          "period": "2026-10-10T21:00:00Z",
+          "total": 313,
+          "errors": 31,
+          "error_rate_pct": 9.9042
+        },
+        {
+          "period": "2026-10-10T22:00:00Z",
+          "total": 310,
+          "errors": 52,
+          "error_rate_pct": 16.7742
+        },
+        {
+          "period": "2026-10-10T23:00:00Z",
+          "total": 322,
+          "errors": 48,
+          "error_rate_pct": 14.9068
+        },
+        {
+          "period": "2026-10-11T00:00:00Z",
+          "total": 305,
+          "errors": 33,
+          "error_rate_pct": 10.8197
+        },
+        {
+          "period": "2026-10-11T01:00:00Z",
+          "total": 308,
+          "errors": 48,
+          "error_rate_pct": 15.5844
+        },
+        {
+          "period": "2026-10-11T02:00:00Z",
+          "total": 309,
+          "errors": 45,
+          "error_rate_pct": 14.5631
+        },
+        {
+          "period": "2026-10-11T03:00:00Z",
+          "total": 300,
+          "errors": 41,
+          "error_rate_pct": 13.6667
+        },
+        {
+          "period": "2026-10-11T04:00:00Z",
+          "total": 303,
+          "errors": 41,
+          "error_rate_pct": 13.5314
+        },
+        {
+          "period": "2026-10-11T05:00:00Z",
+          "total": 301,
+          "errors": 50,
+          "error_rate_pct": 16.6113
+        },
+        {
+          "period": "2026-10-11T06:00:00Z",
+          "total": 305,
+          "errors": 37,
+          "error_rate_pct": 12.1311
+        },
+        {
+          "period": "2026-10-11T07:00:00Z",
+          "total": 291,
+          "errors": 36,
+          "error_rate_pct": 12.3711
+        },
+        {
+          "period": "2026-10-11T08:00:00Z",
+          "total": 310,
+          "errors": 47,
+          "error_rate_pct": 15.1613
+        },
+        {
+          "period": "2026-10-11T09:00:00Z",
+          "total": 324,
+          "errors": 48,
+          "error_rate_pct": 14.8148
+        },
+        {
+          "period": "2026-10-11T10:00:00Z",
+          "total": 304,
+          "errors": 44,
+          "error_rate_pct": 14.4737
+        },
+        {
+          "period": "2026-10-11T11:00:00Z",
+          "total": 311,
+          "errors": 43,
+          "error_rate_pct": 13.8264
+        },
+        {
+          "period": "2026-10-11T12:00:00Z",
+          "total": 295,
+          "errors": 42,
+          "error_rate_pct": 14.2373
+        },
+        {
+          "period": "2026-10-11T13:00:00Z",
+          "total": 300,
+          "errors": 33,
+          "error_rate_pct": 11.0
+        },
+        {
+          "period": "2026-10-11T14:00:00Z",
+          "total": 298,
+          "errors": 36,
+          "error_rate_pct": 12.0805
+        },
+        {
+          "period": "2026-10-11T15:00:00Z",
+          "total": 312,
+          "errors": 53,
+          "error_rate_pct": 16.9872
+        },
+        {
+          "period": "2026-10-11T16:00:00Z",
+          "total": 324,
+          "errors": 38,
+          "error_rate_pct": 11.7284
+        },
+        {
+          "period": "2026-10-11T17:00:00Z",
+          "total": 296,
+          "errors": 53,
+          "error_rate_pct": 17.9054
+        },
+        {
+          "period": "2026-10-11T18:00:00Z",
+          "total": 324,
+          "errors": 37,
+          "error_rate_pct": 11.4198
+        },
+        {
+          "period": "2026-10-11T19:00:00Z",
+          "total": 317,
+          "errors": 40,
+          "error_rate_pct": 12.6183
+        },
+        {
+          "period": "2026-10-11T20:00:00Z",
+          "total": 292,
+          "errors": 42,
+          "error_rate_pct": 14.3836
+        },
+        {
+          "period": "2026-10-11T21:00:00Z",
+          "total": 303,
+          "errors": 33,
+          "error_rate_pct": 10.8911
+        },
+        {
+          "period": "2026-10-11T22:00:00Z",
+          "total": 316,
+          "errors": 42,
+          "error_rate_pct": 13.2911
+        },
+        {
+          "period": "2026-10-11T23:00:00Z",
+          "total": 298,
+          "errors": 43,
+          "error_rate_pct": 14.4295
+        },
+        {
+          "period": "2026-10-12T00:00:00Z",
+          "total": 312,
+          "errors": 45,
+          "error_rate_pct": 14.4231
+        },
+        {
+          "period": "2026-10-12T01:00:00Z",
+          "total": 295,
+          "errors": 46,
+          "error_rate_pct": 15.5932
+        },
+        {
+          "period": "2026-10-12T02:00:00Z",
+          "total": 301,
+          "errors": 42,
+          "error_rate_pct": 13.9535
+        },
+        {
+          "period": "2026-10-12T03:00:00Z",
+          "total": 313,
+          "errors": 38,
+          "error_rate_pct": 12.1406
+        },
+        {
+          "period": "2026-10-12T04:00:00Z",
+          "total": 305,
+          "errors": 40,
+          "error_rate_pct": 13.1148
+        },
+        {
+          "period": "2026-10-12T05:00:00Z",
+          "total": 338,
+          "errors": 41,
+          "error_rate_pct": 12.1302
+        },
+        {
+          "period": "2026-10-12T06:00:00Z",
+          "total": 293,
+          "errors": 37,
+          "error_rate_pct": 12.628
+        },
+        {
+          "period": "2026-10-12T07:00:00Z",
+          "total": 308,
+          "errors": 29,
+          "error_rate_pct": 9.4156
+        },
+        {
+          "period": "2026-10-12T08:00:00Z",
+          "total": 293,
+          "errors": 44,
+          "error_rate_pct": 15.0171
+        },
+        {
+          "period": "2026-10-12T09:00:00Z",
+          "total": 303,
+          "errors": 27,
+          "error_rate_pct": 8.9109
+        },
+        {
+          "period": "2026-10-12T10:00:00Z",
+          "total": 286,
+          "errors": 31,
+          "error_rate_pct": 10.8392
+        },
+        {
+          "period": "2026-10-12T11:00:00Z",
+          "total": 315,
+          "errors": 51,
+          "error_rate_pct": 16.1905
+        },
+        {
+          "period": "2026-10-12T12:00:00Z",
+          "total": 297,
+          "errors": 56,
+          "error_rate_pct": 18.8552
+        },
+        {
+          "period": "2026-10-12T13:00:00Z",
+          "total": 311,
+          "errors": 45,
+          "error_rate_pct": 14.4695
+        },
+        {
+          "period": "2026-10-12T14:00:00Z",
+          "total": 290,
+          "errors": 30,
+          "error_rate_pct": 10.3448
+        },
+        {
+          "period": "2026-10-12T15:00:00Z",
+          "total": 295,
+          "errors": 41,
+          "error_rate_pct": 13.8983
+        },
+        {
+          "period": "2026-10-12T16:00:00Z",
+          "total": 299,
+          "errors": 48,
+          "error_rate_pct": 16.0535
+        },
+        {
+          "period": "2026-10-12T17:00:00Z",
+          "total": 311,
+          "errors": 47,
+          "error_rate_pct": 15.1125
+        },
+        {
+          "period": "2026-10-12T18:00:00Z",
+          "total": 299,
+          "errors": 39,
+          "error_rate_pct": 13.0435
+        },
+        {
+          "period": "2026-10-12T19:00:00Z",
+          "total": 281,
+          "errors": 44,
+          "error_rate_pct": 15.6584
+        },
+        {
+          "period": "2026-10-12T20:00:00Z",
+          "total": 320,
+          "errors": 47,
+          "error_rate_pct": 14.6875
+        },
+        {
+          "period": "2026-10-12T21:00:00Z",
+          "total": 304,
+          "errors": 47,
+          "error_rate_pct": 15.4605
+        },
+        {
+          "period": "2026-10-12T22:00:00Z",
+          "total": 299,
+          "errors": 26,
+          "error_rate_pct": 8.6957
+        },
+        {
+          "period": "2026-10-12T23:00:00Z",
+          "total": 298,
+          "errors": 46,
+          "error_rate_pct": 15.4362
+        },
+        {
+          "period": "2026-10-13T00:00:00Z",
+          "total": 312,
+          "errors": 35,
+          "error_rate_pct": 11.2179
+        },
+        {
+          "period": "2026-10-13T01:00:00Z",
+          "total": 306,
+          "errors": 45,
+          "error_rate_pct": 14.7059
+        },
+        {
+          "period": "2026-10-13T02:00:00Z",
+          "total": 300,
+          "errors": 34,
+          "error_rate_pct": 11.3333
+        },
+        {
+          "period": "2026-10-13T03:00:00Z",
+          "total": 304,
+          "errors": 56,
+          "error_rate_pct": 18.4211
+        },
+        {
+          "period": "2026-10-13T04:00:00Z",
+          "total": 308,
+          "errors": 35,
+          "error_rate_pct": 11.3636
+        },
+        {
+          "period": "2026-10-13T05:00:00Z",
+          "total": 296,
+          "errors": 38,
+          "error_rate_pct": 12.8378
+        },
+        {
+          "period": "2026-10-13T06:00:00Z",
+          "total": 305,
+          "errors": 38,
+          "error_rate_pct": 12.459
+        },
+        {
+          "period": "2026-10-13T07:00:00Z",
+          "total": 299,
+          "errors": 42,
+          "error_rate_pct": 14.0468
+        },
+        {
+          "period": "2026-10-13T08:00:00Z",
+          "total": 316,
+          "errors": 36,
+          "error_rate_pct": 11.3924
+        },
+        {
+          "period": "2026-10-13T09:00:00Z",
+          "total": 323,
+          "errors": 47,
+          "error_rate_pct": 14.5511
+        },
+        {
+          "period": "2026-10-13T10:00:00Z",
+          "total": 320,
+          "errors": 27,
+          "error_rate_pct": 8.4375
+        },
+        {
+          "period": "2026-10-13T11:00:00Z",
+          "total": 298,
+          "errors": 48,
+          "error_rate_pct": 16.1074
+        },
+        {
+          "period": "2026-10-13T12:00:00Z",
+          "total": 309,
+          "errors": 46,
+          "error_rate_pct": 14.8867
+        },
+        {
+          "period": "2026-10-13T13:00:00Z",
+          "total": 297,
+          "errors": 41,
+          "error_rate_pct": 13.8047
+        },
+        {
+          "period": "2026-10-13T14:00:00Z",
+          "total": 318,
+          "errors": 35,
+          "error_rate_pct": 11.0063
+        },
+        {
+          "period": "2026-10-13T15:00:00Z",
+          "total": 304,
+          "errors": 46,
+          "error_rate_pct": 15.1316
+        },
+        {
+          "period": "2026-10-13T16:00:00Z",
+          "total": 310,
+          "errors": 51,
+          "error_rate_pct": 16.4516
+        },
+        {
+          "period": "2026-10-13T17:00:00Z",
+          "total": 298,
+          "errors": 33,
+          "error_rate_pct": 11.0738
+        },
+        {
+          "period": "2026-10-13T18:00:00Z",
+          "total": 296,
+          "errors": 34,
+          "error_rate_pct": 11.4865
+        },
+        {
+          "period": "2026-10-13T19:00:00Z",
+          "total": 320,
+          "errors": 53,
+          "error_rate_pct": 16.5625
+        },
+        {
+          "period": "2026-10-13T20:00:00Z",
+          "total": 313,
+          "errors": 39,
+          "error_rate_pct": 12.4601
+        },
+        {
+          "period": "2026-10-13T21:00:00Z",
+          "total": 311,
+          "errors": 42,
+          "error_rate_pct": 13.5048
+        },
+        {
+          "period": "2026-10-13T22:00:00Z",
+          "total": 305,
+          "errors": 33,
+          "error_rate_pct": 10.8197
+        },
+        {
+          "period": "2026-10-13T23:00:00Z",
+          "total": 307,
+          "errors": 42,
+          "error_rate_pct": 13.6808
+        },
+        {
+          "period": "2026-10-14T00:00:00Z",
+          "total": 325,
+          "errors": 39,
+          "error_rate_pct": 12.0
+        },
+        {
+          "period": "2026-10-14T01:00:00Z",
+          "total": 286,
+          "errors": 30,
+          "error_rate_pct": 10.4895
+        },
+        {
+          "period": "2026-10-14T02:00:00Z",
+          "total": 314,
+          "errors": 38,
+          "error_rate_pct": 12.1019
+        },
+        {
+          "period": "2026-10-14T03:00:00Z",
+          "total": 314,
+          "errors": 42,
+          "error_rate_pct": 13.3758
+        },
+        {
+          "period": "2026-10-14T04:00:00Z",
+          "total": 341,
+          "errors": 43,
+          "error_rate_pct": 12.61
+        },
+        {
+          "period": "2026-10-14T05:00:00Z",
+          "total": 309,
+          "errors": 50,
+          "error_rate_pct": 16.1812
+        },
+        {
+          "period": "2026-10-14T06:00:00Z",
+          "total": 324,
+          "errors": 52,
+          "error_rate_pct": 16.0494
+        },
+        {
+          "period": "2026-10-14T07:00:00Z",
+          "total": 298,
+          "errors": 34,
+          "error_rate_pct": 11.4094
+        },
+        {
+          "period": "2026-10-14T08:00:00Z",
+          "total": 302,
+          "errors": 34,
+          "error_rate_pct": 11.2583
+        },
+        {
+          "period": "2026-10-14T09:00:00Z",
+          "total": 316,
+          "errors": 46,
+          "error_rate_pct": 14.557
+        },
+        {
+          "period": "2026-10-14T10:00:00Z",
+          "total": 304,
+          "errors": 37,
+          "error_rate_pct": 12.1711
+        },
+        {
+          "period": "2026-10-14T11:00:00Z",
+          "total": 292,
+          "errors": 50,
+          "error_rate_pct": 17.1233
+        },
+        {
+          "period": "2026-10-14T12:00:00Z",
+          "total": 321,
+          "errors": 37,
+          "error_rate_pct": 11.5265
+        },
+        {
+          "period": "2026-10-14T13:00:00Z",
+          "total": 294,
+          "errors": 31,
+          "error_rate_pct": 10.5442
+        },
+        {
+          "period": "2026-10-14T14:00:00Z",
+          "total": 320,
+          "errors": 39,
+          "error_rate_pct": 12.1875
+        },
+        {
+          "period": "2026-10-14T15:00:00Z",
+          "total": 315,
+          "errors": 41,
+          "error_rate_pct": 13.0159
+        },
+        {
+          "period": "2026-10-14T16:00:00Z",
+          "total": 300,
+          "errors": 40,
+          "error_rate_pct": 13.3333
+        },
+        {
+          "period": "2026-10-14T17:00:00Z",
+          "total": 314,
+          "errors": 43,
+          "error_rate_pct": 13.6943
+        },
+        {
+          "period": "2026-10-14T18:00:00Z",
+          "total": 291,
+          "errors": 37,
+          "error_rate_pct": 12.7148
+        },
+        {
+          "period": "2026-10-14T19:00:00Z",
+          "total": 303,
+          "errors": 41,
+          "error_rate_pct": 13.5314
+        },
+        {
+          "period": "2026-10-14T20:00:00Z",
+          "total": 314,
+          "errors": 46,
+          "error_rate_pct": 14.6497
+        },
+        {
+          "period": "2026-10-14T21:00:00Z",
+          "total": 295,
+          "errors": 28,
+          "error_rate_pct": 9.4915
+        },
+        {
+          "period": "2026-10-14T22:00:00Z",
+          "total": 317,
+          "errors": 54,
+          "error_rate_pct": 17.0347
+        },
+        {
+          "period": "2026-10-14T23:00:00Z",
+          "total": 319,
+          "errors": 38,
+          "error_rate_pct": 11.9122
+        },
+        {
+          "period": "2026-10-15T00:00:00Z",
+          "total": 315,
+          "errors": 37,
+          "error_rate_pct": 11.746
+        },
+        {
+          "period": "2026-10-15T01:00:00Z",
+          "total": 312,
+          "errors": 38,
+          "error_rate_pct": 12.1795
+        },
+        {
+          "period": "2026-10-15T02:00:00Z",
+          "total": 305,
+          "errors": 40,
+          "error_rate_pct": 13.1148
+        },
+        {
+          "period": "2026-10-15T03:00:00Z",
+          "total": 314,
+          "errors": 46,
+          "error_rate_pct": 14.6497
+        },
+        {
+          "period": "2026-10-15T04:00:00Z",
+          "total": 319,
+          "errors": 47,
+          "error_rate_pct": 14.7335
+        },
+        {
+          "period": "2026-10-15T05:00:00Z",
+          "total": 318,
+          "errors": 32,
+          "error_rate_pct": 10.0629
+        },
+        {
+          "period": "2026-10-15T06:00:00Z",
+          "total": 290,
+          "errors": 36,
+          "error_rate_pct": 12.4138
+        },
+        {
+          "period": "2026-10-15T07:00:00Z",
+          "total": 297,
+          "errors": 49,
+          "error_rate_pct": 16.4983
+        },
+        {
+          "period": "2026-10-15T08:00:00Z",
+          "total": 297,
+          "errors": 38,
+          "error_rate_pct": 12.7946
+        },
+        {
+          "period": "2026-10-15T09:00:00Z",
+          "total": 312,
+          "errors": 29,
+          "error_rate_pct": 9.2949
+        },
+        {
+          "period": "2026-10-15T10:00:00Z",
+          "total": 305,
+          "errors": 46,
+          "error_rate_pct": 15.082
+        },
+        {
+          "period": "2026-10-15T11:00:00Z",
+          "total": 314,
+          "errors": 37,
+          "error_rate_pct": 11.7834
+        },
+        {
+          "period": "2026-10-15T12:00:00Z",
+          "total": 335,
+          "errors": 40,
+          "error_rate_pct": 11.9403
+        },
+        {
+          "period": "2026-10-15T13:00:00Z",
+          "total": 320,
+          "errors": 46,
+          "error_rate_pct": 14.375
+        },
+        {
+          "period": "2026-10-15T14:00:00Z",
+          "total": 296,
+          "errors": 27,
+          "error_rate_pct": 9.1216
+        },
+        {
+          "period": "2026-10-15T15:00:00Z",
+          "total": 299,
+          "errors": 40,
+          "error_rate_pct": 13.3779
+        },
+        {
+          "period": "2026-10-15T16:00:00Z",
+          "total": 305,
+          "errors": 36,
+          "error_rate_pct": 11.8033
+        },
+        {
+          "period": "2026-10-15T17:00:00Z",
+          "total": 300,
+          "errors": 51,
+          "error_rate_pct": 17.0
+        },
+        {
+          "period": "2026-10-15T18:00:00Z",
+          "total": 316,
+          "errors": 34,
+          "error_rate_pct": 10.7595
+        },
+        {
+          "period": "2026-10-15T19:00:00Z",
+          "total": 315,
+          "errors": 46,
+          "error_rate_pct": 14.6032
+        },
+        {
+          "period": "2026-10-15T20:00:00Z",
+          "total": 317,
+          "errors": 37,
+          "error_rate_pct": 11.6719
+        },
+        {
+          "period": "2026-10-15T21:00:00Z",
+          "total": 299,
+          "errors": 42,
+          "error_rate_pct": 14.0468
+        },
+        {
+          "period": "2026-10-15T22:00:00Z",
+          "total": 291,
+          "errors": 37,
+          "error_rate_pct": 12.7148
+        },
+        {
+          "period": "2026-10-15T23:00:00Z",
+          "total": 315,
+          "errors": 38,
+          "error_rate_pct": 12.0635
+        },
+        {
+          "period": "2026-10-16T00:00:00Z",
+          "total": 312,
+          "errors": 44,
+          "error_rate_pct": 14.1026
+        },
+        {
+          "period": "2026-10-16T01:00:00Z",
+          "total": 314,
+          "errors": 37,
+          "error_rate_pct": 11.7834
+        },
+        {
+          "period": "2026-10-16T02:00:00Z",
+          "total": 309,
+          "errors": 51,
+          "error_rate_pct": 16.5049
+        },
+        {
+          "period": "2026-10-16T03:00:00Z",
+          "total": 305,
+          "errors": 54,
+          "error_rate_pct": 17.7049
+        },
+        {
+          "period": "2026-10-16T04:00:00Z",
+          "total": 306,
+          "errors": 44,
+          "error_rate_pct": 14.3791
+        },
+        {
+          "period": "2026-10-16T05:00:00Z",
+          "total": 300,
+          "errors": 42,
+          "error_rate_pct": 14.0
+        },
+        {
+          "period": "2026-10-16T06:00:00Z",
+          "total": 326,
+          "errors": 34,
+          "error_rate_pct": 10.4294
+        },
+        {
+          "period": "2026-10-16T07:00:00Z",
+          "total": 308,
+          "errors": 34,
+          "error_rate_pct": 11.039
+        },
+        {
+          "period": "2026-10-16T08:00:00Z",
+          "total": 305,
+          "errors": 42,
+          "error_rate_pct": 13.7705
+        },
+        {
+          "period": "2026-10-16T09:00:00Z",
+          "total": 287,
+          "errors": 46,
+          "error_rate_pct": 16.0279
+        },
+        {
+          "period": "2026-10-16T10:00:00Z",
+          "total": 314,
+          "errors": 38,
+          "error_rate_pct": 12.1019
+        },
+        {
+          "period": "2026-10-16T11:00:00Z",
+          "total": 313,
+          "errors": 46,
+          "error_rate_pct": 14.6965
+        },
+        {
+          "period": "2026-10-16T12:00:00Z",
+          "total": 321,
+          "errors": 33,
+          "error_rate_pct": 10.2804
+        },
+        {
+          "period": "2026-10-16T13:00:00Z",
+          "total": 302,
+          "errors": 41,
+          "error_rate_pct": 13.5762
+        },
+        {
+          "period": "2026-10-16T14:00:00Z",
+          "total": 312,
+          "errors": 30,
+          "error_rate_pct": 9.6154
+        },
+        {
+          "period": "2026-10-16T15:00:00Z",
+          "total": 335,
+          "errors": 40,
+          "error_rate_pct": 11.9403
+        },
+        {
+          "period": "2026-10-16T16:00:00Z",
+          "total": 301,
+          "errors": 39,
+          "error_rate_pct": 12.9568
+        },
+        {
+          "period": "2026-10-16T17:00:00Z",
+          "total": 303,
+          "errors": 37,
+          "error_rate_pct": 12.2112
+        },
+        {
+          "period": "2026-10-16T18:00:00Z",
+          "total": 296,
+          "errors": 32,
+          "error_rate_pct": 10.8108
+        },
+        {
+          "period": "2026-10-16T19:00:00Z",
+          "total": 313,
+          "errors": 37,
+          "error_rate_pct": 11.8211
+        },
+        {
+          "period": "2026-10-16T20:00:00Z",
+          "total": 295,
+          "errors": 32,
+          "error_rate_pct": 10.8475
+        },
+        {
+          "period": "2026-10-16T21:00:00Z",
+          "total": 279,
+          "errors": 35,
+          "error_rate_pct": 12.5448
+        },
+        {
+          "period": "2026-10-16T22:00:00Z",
+          "total": 61,
+          "errors": 3,
+          "error_rate_pct": 4.918
+        }
+      ]
+    }
+  },
+  "latency_analytics": {
+    "count": 85027,
+    "avg_ms": 498.5578,
+    "min_ms": 1.0,
+    "max_ms": 13322.0,
+    "p50_ms": 144.0,
+    "p95_ms": 2558.7,
+    "by_service": {
+      "auth": {
+        "count": 18491,
+        "avg_ms": 386.9399,
+        "min_ms": 1.0,
+        "max_ms": 8177.0,
+        "p50_ms": 126.0,
+        "p95_ms": 1979.0
+      },
+      "gateway": {
+        "count": 16968,
+        "avg_ms": 396.9776,
+        "min_ms": 1.0,
+        "max_ms": 6785.0,
+        "p50_ms": 119.0,
+        "p95_ms": 1980.3
+      },
+      "inventory": {
+        "count": 8571,
+        "avg_ms": 438.8953,
+        "min_ms": 1.0,
+        "max_ms": 8072.0,
+        "p50_ms": 143.0,
+        "p95_ms": 2246.0
+      },
+      "notifications": {
+        "count": 8534,
+        "avg_ms": 434.1057,
+        "min_ms": 1.0,
+        "max_ms": 9474.0,
+        "p50_ms": 143.0,
+        "p95_ms": 2210.4
+      },
+      "orders": {
+        "count": 13723,
+        "avg_ms": 429.0345,
+        "min_ms": 1.0,
+        "max_ms": 9115.0,
+        "p50_ms": 142.0,
+        "p95_ms": 2220.0
+      },
+      "payment": {
+        "count": 12012,
+        "avg_ms": 983.7986,
+        "min_ms": 1.0,
+        "max_ms": 13322.0,
+        "p50_ms": 231.0,
+        "p95_ms": 4393.9
+      },
+      "search": {
+        "count": 6728,
+        "avg_ms": 494.7377,
+        "min_ms": 1.0,
+        "max_ms": 9967.0,
+        "p50_ms": 170.0,
+        "p95_ms": 2579.9
+      }
+    },
+    "trend": {
+      "daily": [
+        {
+          "period": "2026-10-04",
+          "count": 15,
+          "avg_ms": 266.6,
+          "p95_ms": 937.9
+        },
+        {
+          "period": "2026-10-05",
+          "count": 7117,
+          "avg_ms": 493.7933,
+          "p95_ms": 2494.8
+        },
+        {
+          "period": "2026-10-06",
+          "count": 7065,
+          "avg_ms": 501.4173,
+          "p95_ms": 2531.6
+        },
+        {
+          "period": "2026-10-07",
+          "count": 7095,
+          "avg_ms": 513.5557,
+          "p95_ms": 2607.6
+        },
+        {
+          "period": "2026-10-08",
+          "count": 7135,
+          "avg_ms": 485.6814,
+          "p95_ms": 2576.0
+        },
+        {
+          "period": "2026-10-09",
+          "count": 7162,
+          "avg_ms": 479.5383,
+          "p95_ms": 2494.7
+        },
+        {
+          "period": "2026-10-10",
+          "count": 7155,
+          "avg_ms": 496.2287,
+          "p95_ms": 2562.3
+        },
+        {
+          "period": "2026-10-11",
+          "count": 7138,
+          "avg_ms": 512.4018,
+          "p95_ms": 2629.1
+        },
+        {
+          "period": "2026-10-12",
+          "count": 7057,
+          "avg_ms": 515.1173,
+          "p95_ms": 2647.0
+        },
+        {
+          "period": "2026-10-13",
+          "count": 7120,
+          "avg_ms": 503.5315,
+          "p95_ms": 2509.05
+        },
+        {
+          "period": "2026-10-14",
+          "count": 7191,
+          "avg_ms": 489.2645,
+          "p95_ms": 2514.0
+        },
+        {
+          "period": "2026-10-15",
+          "count": 7199,
+          "avg_ms": 483.9532,
+          "p95_ms": 2488.5
+        },
+        {
+          "period": "2026-10-16",
+          "count": 6578,
+          "avg_ms": 510.1735,
+          "p95_ms": 2660.75
+        }
+      ],
+      "hourly": [
+        {
+          "period": "2026-10-04T19:00:00Z",
+          "count": 3,
+          "avg_ms": 175.0,
+          "p95_ms": 310.6
+        },
+        {
+          "period": "2026-10-04T20:00:00Z",
+          "count": 4,
+          "avg_ms": 117.75,
+          "p95_ms": 207.65
+        },
+        {
+          "period": "2026-10-04T21:00:00Z",
+          "count": 2,
+          "avg_ms": 90.5,
+          "p95_ms": 138.65
+        },
+        {
+          "period": "2026-10-04T22:00:00Z",
+          "count": 4,
+          "avg_ms": 636.0,
+          "p95_ms": 1610.55
+        },
+        {
+          "period": "2026-10-04T23:00:00Z",
+          "count": 2,
+          "avg_ms": 139.0,
+          "p95_ms": 215.5
+        },
+        {
+          "period": "2026-10-05T00:00:00Z",
+          "count": 297,
+          "avg_ms": 414.7912,
+          "p95_ms": 1859.4
+        },
+        {
+          "period": "2026-10-05T01:00:00Z",
+          "count": 301,
+          "avg_ms": 464.4751,
+          "p95_ms": 2507.0
+        },
+        {
+          "period": "2026-10-05T02:00:00Z",
+          "count": 309,
+          "avg_ms": 578.1618,
+          "p95_ms": 3015.4
+        },
+        {
+          "period": "2026-10-05T03:00:00Z",
+          "count": 301,
+          "avg_ms": 497.99,
+          "p95_ms": 2413.0
+        },
+        {
+          "period": "2026-10-05T04:00:00Z",
+          "count": 306,
+          "avg_ms": 586.1863,
+          "p95_ms": 3056.5
+        },
+        {
+          "period": "2026-10-05T05:00:00Z",
+          "count": 297,
+          "avg_ms": 575.0875,
+          "p95_ms": 3046.2
+        },
+        {
+          "period": "2026-10-05T06:00:00Z",
+          "count": 278,
+          "avg_ms": 475.8094,
+          "p95_ms": 2358.95
+        },
+        {
+          "period": "2026-10-05T07:00:00Z",
+          "count": 286,
+          "avg_ms": 467.7238,
+          "p95_ms": 2475.5
+        },
+        {
+          "period": "2026-10-05T08:00:00Z",
+          "count": 295,
+          "avg_ms": 526.0237,
+          "p95_ms": 2862.6
+        },
+        {
+          "period": "2026-10-05T09:00:00Z",
+          "count": 293,
+          "avg_ms": 544.7884,
+          "p95_ms": 2742.4
+        },
+        {
+          "period": "2026-10-05T10:00:00Z",
+          "count": 286,
+          "avg_ms": 374.7168,
+          "p95_ms": 1916.0
+        },
+        {
+          "period": "2026-10-05T11:00:00Z",
+          "count": 287,
+          "avg_ms": 543.5401,
+          "p95_ms": 3178.6
+        },
+        {
+          "period": "2026-10-05T12:00:00Z",
+          "count": 287,
+          "avg_ms": 514.1045,
+          "p95_ms": 2341.1
+        },
+        {
+          "period": "2026-10-05T13:00:00Z",
+          "count": 297,
+          "avg_ms": 518.596,
+          "p95_ms": 2782.0
+        },
+        {
+          "period": "2026-10-05T14:00:00Z",
+          "count": 311,
+          "avg_ms": 495.4984,
+          "p95_ms": 2146.5
+        },
+        {
+          "period": "2026-10-05T15:00:00Z",
+          "count": 302,
+          "avg_ms": 484.7947,
+          "p95_ms": 2153.4
+        },
+        {
+          "period": "2026-10-05T16:00:00Z",
+          "count": 298,
+          "avg_ms": 496.2215,
+          "p95_ms": 2092.25
+        },
+        {
+          "period": "2026-10-05T17:00:00Z",
+          "count": 304,
+          "avg_ms": 559.0066,
+          "p95_ms": 3134.9
+        },
+        {
+          "period": "2026-10-05T18:00:00Z",
+          "count": 309,
+          "avg_ms": 474.2136,
+          "p95_ms": 2512.6
+        },
+        {
+          "period": "2026-10-05T19:00:00Z",
+          "count": 298,
+          "avg_ms": 429.0436,
+          "p95_ms": 2080.65
+        },
+        {
+          "period": "2026-10-05T20:00:00Z",
+          "count": 295,
+          "avg_ms": 451.4136,
+          "p95_ms": 2145.5
+        },
+        {
+          "period": "2026-10-05T21:00:00Z",
+          "count": 298,
+          "avg_ms": 417.094,
+          "p95_ms": 2286.5
+        },
+        {
+          "period": "2026-10-05T22:00:00Z",
+          "count": 282,
+          "avg_ms": 508.4716,
+          "p95_ms": 3004.8
+        },
+        {
+          "period": "2026-10-05T23:00:00Z",
+          "count": 300,
+          "avg_ms": 444.8967,
+          "p95_ms": 2831.3
+        },
+        {
+          "period": "2026-10-06T00:00:00Z",
+          "count": 308,
+          "avg_ms": 559.7857,
+          "p95_ms": 2999.9
+        },
+        {
+          "period": "2026-10-06T01:00:00Z",
+          "count": 266,
+          "avg_ms": 374.9023,
+          "p95_ms": 1575.0
+        },
+        {
+          "period": "2026-10-06T02:00:00Z",
+          "count": 294,
+          "avg_ms": 619.6633,
+          "p95_ms": 3141.35
+        },
+        {
+          "period": "2026-10-06T03:00:00Z",
+          "count": 305,
+          "avg_ms": 467.6197,
+          "p95_ms": 2081.0
+        },
+        {
+          "period": "2026-10-06T04:00:00Z",
+          "count": 285,
+          "avg_ms": 561.2596,
+          "p95_ms": 3275.6
+        },
+        {
+          "period": "2026-10-06T05:00:00Z",
+          "count": 294,
+          "avg_ms": 447.2347,
+          "p95_ms": 2068.55
+        },
+        {
+          "period": "2026-10-06T06:00:00Z",
+          "count": 282,
+          "avg_ms": 446.6667,
+          "p95_ms": 2076.55
+        },
+        {
+          "period": "2026-10-06T07:00:00Z",
+          "count": 274,
+          "avg_ms": 597.6131,
+          "p95_ms": 2969.55
+        },
+        {
+          "period": "2026-10-06T08:00:00Z",
+          "count": 294,
+          "avg_ms": 429.5,
+          "p95_ms": 2172.4
+        },
+        {
+          "period": "2026-10-06T09:00:00Z",
+          "count": 282,
+          "avg_ms": 548.0674,
+          "p95_ms": 2857.2
+        },
+        {
+          "period": "2026-10-06T10:00:00Z",
+          "count": 293,
+          "avg_ms": 495.6075,
+          "p95_ms": 2453.2
+        },
+        {
+          "period": "2026-10-06T11:00:00Z",
+          "count": 303,
+          "avg_ms": 427.7855,
+          "p95_ms": 2231.6
+        },
+        {
+          "period": "2026-10-06T12:00:00Z",
+          "count": 303,
+          "avg_ms": 481.7393,
+          "p95_ms": 2360.8
+        },
+        {
+          "period": "2026-10-06T13:00:00Z",
+          "count": 290,
+          "avg_ms": 467.8966,
+          "p95_ms": 2165.2
+        },
+        {
+          "period": "2026-10-06T14:00:00Z",
+          "count": 303,
+          "avg_ms": 495.6205,
+          "p95_ms": 2308.6
+        },
+        {
+          "period": "2026-10-06T15:00:00Z",
+          "count": 303,
+          "avg_ms": 562.4389,
+          "p95_ms": 2963.1
+        },
+        {
+          "period": "2026-10-06T16:00:00Z",
+          "count": 260,
+          "avg_ms": 468.6615,
+          "p95_ms": 2606.65
+        },
+        {
+          "period": "2026-10-06T17:00:00Z",
+          "count": 297,
+          "avg_ms": 503.5589,
+          "p95_ms": 2732.4
+        },
+        {
+          "period": "2026-10-06T18:00:00Z",
+          "count": 306,
+          "avg_ms": 488.4804,
+          "p95_ms": 2282.75
+        },
+        {
+          "period": "2026-10-06T19:00:00Z",
+          "count": 310,
+          "avg_ms": 598.0903,
+          "p95_ms": 3016.9
+        },
+        {
+          "period": "2026-10-06T20:00:00Z",
+          "count": 297,
+          "avg_ms": 517.1481,
+          "p95_ms": 2893.0
+        },
+        {
+          "period": "2026-10-06T21:00:00Z",
+          "count": 309,
+          "avg_ms": 464.4725,
+          "p95_ms": 2142.8
+        },
+        {
+          "period": "2026-10-06T22:00:00Z",
+          "count": 297,
+          "avg_ms": 501.4613,
+          "p95_ms": 2849.0
+        },
+        {
+          "period": "2026-10-06T23:00:00Z",
+          "count": 310,
+          "avg_ms": 497.3161,
+          "p95_ms": 2300.2
+        },
+        {
+          "period": "2026-10-07T00:00:00Z",
+          "count": 312,
+          "avg_ms": 576.1827,
+          "p95_ms": 2448.6
+        },
+        {
+          "period": "2026-10-07T01:00:00Z",
+          "count": 290,
+          "avg_ms": 540.169,
+          "p95_ms": 2814.0
+        },
+        {
+          "period": "2026-10-07T02:00:00Z",
+          "count": 291,
+          "avg_ms": 575.0859,
+          "p95_ms": 2621.5
+        },
+        {
+          "period": "2026-10-07T03:00:00Z",
+          "count": 313,
+          "avg_ms": 455.377,
+          "p95_ms": 2170.0
+        },
+        {
+          "period": "2026-10-07T04:00:00Z",
+          "count": 310,
+          "avg_ms": 553.6581,
+          "p95_ms": 3098.95
+        },
+        {
+          "period": "2026-10-07T05:00:00Z",
+          "count": 302,
+          "avg_ms": 527.7682,
+          "p95_ms": 2319.1
+        },
+        {
+          "period": "2026-10-07T06:00:00Z",
+          "count": 282,
+          "avg_ms": 522.9858,
+          "p95_ms": 2763.25
+        },
+        {
+          "period": "2026-10-07T07:00:00Z",
+          "count": 297,
+          "avg_ms": 537.2391,
+          "p95_ms": 2593.6
+        },
+        {
+          "period": "2026-10-07T08:00:00Z",
+          "count": 301,
+          "avg_ms": 444.2093,
+          "p95_ms": 2089.0
+        },
+        {
+          "period": "2026-10-07T09:00:00Z",
+          "count": 307,
+          "avg_ms": 604.5928,
+          "p95_ms": 2829.8
+        },
+        {
+          "period": "2026-10-07T10:00:00Z",
+          "count": 288,
+          "avg_ms": 478.2674,
+          "p95_ms": 2201.5
+        },
+        {
+          "period": "2026-10-07T11:00:00Z",
+          "count": 286,
+          "avg_ms": 558.0524,
+          "p95_ms": 2885.25
+        },
+        {
+          "period": "2026-10-07T12:00:00Z",
+          "count": 278,
+          "avg_ms": 526.5576,
+          "p95_ms": 2240.3
+        },
+        {
+          "period": "2026-10-07T13:00:00Z",
+          "count": 288,
+          "avg_ms": 447.4132,
+          "p95_ms": 2321.15
+        },
+        {
+          "period": "2026-10-07T14:00:00Z",
+          "count": 289,
+          "avg_ms": 480.8062,
+          "p95_ms": 2308.8
+        },
+        {
+          "period": "2026-10-07T15:00:00Z",
+          "count": 287,
+          "avg_ms": 617.7909,
+          "p95_ms": 3413.3
+        },
+        {
+          "period": "2026-10-07T16:00:00Z",
+          "count": 299,
+          "avg_ms": 462.2609,
+          "p95_ms": 2259.5
+        },
+        {
+          "period": "2026-10-07T17:00:00Z",
+          "count": 297,
+          "avg_ms": 469.6229,
+          "p95_ms": 2033.8
+        },
+        {
+          "period": "2026-10-07T18:00:00Z",
+          "count": 309,
+          "avg_ms": 440.9385,
+          "p95_ms": 2199.6
+        },
+        {
+          "period": "2026-10-07T19:00:00Z",
+          "count": 287,
+          "avg_ms": 427.3624,
+          "p95_ms": 2315.1
+        },
+        {
+          "period": "2026-10-07T20:00:00Z",
+          "count": 298,
+          "avg_ms": 542.7517,
+          "p95_ms": 2659.55
+        },
+        {
+          "period": "2026-10-07T21:00:00Z",
+          "count": 307,
+          "avg_ms": 495.772,
+          "p95_ms": 2620.7
+        },
+        {
+          "period": "2026-10-07T22:00:00Z",
+          "count": 291,
+          "avg_ms": 431.9278,
+          "p95_ms": 2116.0
+        },
+        {
+          "period": "2026-10-07T23:00:00Z",
+          "count": 286,
+          "avg_ms": 611.6329,
+          "p95_ms": 3164.25
+        },
+        {
+          "period": "2026-10-08T00:00:00Z",
+          "count": 294,
+          "avg_ms": 516.3333,
+          "p95_ms": 2776.2
+        },
+        {
+          "period": "2026-10-08T01:00:00Z",
+          "count": 298,
+          "avg_ms": 493.943,
+          "p95_ms": 2752.5
+        },
+        {
+          "period": "2026-10-08T02:00:00Z",
+          "count": 283,
+          "avg_ms": 549.8728,
+          "p95_ms": 2928.6
+        },
+        {
+          "period": "2026-10-08T03:00:00Z",
+          "count": 312,
+          "avg_ms": 524.7212,
+          "p95_ms": 2771.25
+        },
+        {
+          "period": "2026-10-08T04:00:00Z",
+          "count": 284,
+          "avg_ms": 734.6585,
+          "p95_ms": 4312.75
+        },
+        {
+          "period": "2026-10-08T05:00:00Z",
+          "count": 291,
+          "avg_ms": 466.1478,
+          "p95_ms": 2381.0
+        },
+        {
+          "period": "2026-10-08T06:00:00Z",
+          "count": 300,
+          "avg_ms": 448.48,
+          "p95_ms": 2259.45
+        },
+        {
+          "period": "2026-10-08T07:00:00Z",
+          "count": 305,
+          "avg_ms": 488.1115,
+          "p95_ms": 2602.2
+        },
+        {
+          "period": "2026-10-08T08:00:00Z",
+          "count": 289,
+          "avg_ms": 449.8893,
+          "p95_ms": 2713.0
+        },
+        {
+          "period": "2026-10-08T09:00:00Z",
+          "count": 307,
+          "avg_ms": 501.7655,
+          "p95_ms": 2573.7
+        },
+        {
+          "period": "2026-10-08T10:00:00Z",
+          "count": 307,
+          "avg_ms": 421.8371,
+          "p95_ms": 2072.5
+        },
+        {
+          "period": "2026-10-08T11:00:00Z",
+          "count": 308,
+          "avg_ms": 475.4675,
+          "p95_ms": 2775.1
+        },
+        {
+          "period": "2026-10-08T12:00:00Z",
+          "count": 302,
+          "avg_ms": 482.5066,
+          "p95_ms": 2460.1
+        },
+        {
+          "period": "2026-10-08T13:00:00Z",
+          "count": 300,
+          "avg_ms": 508.84,
+          "p95_ms": 2910.65
+        },
+        {
+          "period": "2026-10-08T14:00:00Z",
+          "count": 303,
+          "avg_ms": 378.2442,
+          "p95_ms": 1871.3
+        },
+        {
+          "period": "2026-10-08T15:00:00Z",
+          "count": 280,
+          "avg_ms": 463.2857,
+          "p95_ms": 2644.0
+        },
+        {
+          "period": "2026-10-08T16:00:00Z",
+          "count": 296,
+          "avg_ms": 483.8108,
+          "p95_ms": 2691.25
+        },
+        {
+          "period": "2026-10-08T17:00:00Z",
+          "count": 291,
+          "avg_ms": 485.9416,
+          "p95_ms": 2156.0
+        },
+        {
+          "period": "2026-10-08T18:00:00Z",
+          "count": 302,
+          "avg_ms": 436.6821,
+          "p95_ms": 2171.05
+        },
+        {
+          "period": "2026-10-08T19:00:00Z",
+          "count": 294,
+          "avg_ms": 512.2075,
+          "p95_ms": 2354.45
+        },
+        {
+          "period": "2026-10-08T20:00:00Z",
+          "count": 298,
+          "avg_ms": 482.8826,
+          "p95_ms": 2531.15
+        },
+        {
+          "period": "2026-10-08T21:00:00Z",
+          "count": 296,
+          "avg_ms": 383.7162,
+          "p95_ms": 1844.25
+        },
+        {
+          "period": "2026-10-08T22:00:00Z",
+          "count": 304,
+          "avg_ms": 494.0428,
+          "p95_ms": 2794.6
+        },
+        {
+          "period": "2026-10-08T23:00:00Z",
+          "count": 291,
+          "avg_ms": 487.4433,
+          "p95_ms": 2459.0
+        },
+        {
+          "period": "2026-10-09T00:00:00Z",
+          "count": 312,
+          "avg_ms": 501.8397,
+          "p95_ms": 2104.6
+        },
+        {
+          "period": "2026-10-09T01:00:00Z",
+          "count": 305,
+          "avg_ms": 459.3639,
+          "p95_ms": 2555.4
+        },
+        {
+          "period": "2026-10-09T02:00:00Z",
+          "count": 292,
+          "avg_ms": 485.4863,
+          "p95_ms": 2584.1
+        },
+        {
+          "period": "2026-10-09T03:00:00Z",
+          "count": 301,
+          "avg_ms": 567.9635,
+          "p95_ms": 3531.0
+        },
+        {
+          "period": "2026-10-09T04:00:00Z",
+          "count": 306,
+          "avg_ms": 603.0,
+          "p95_ms": 3676.0
+        },
+        {
+          "period": "2026-10-09T05:00:00Z",
+          "count": 304,
+          "avg_ms": 575.9539,
+          "p95_ms": 3213.25
+        },
+        {
+          "period": "2026-10-09T06:00:00Z",
+          "count": 279,
+          "avg_ms": 407.7563,
+          "p95_ms": 1657.9
+        },
+        {
+          "period": "2026-10-09T07:00:00Z",
+          "count": 304,
+          "avg_ms": 462.8849,
+          "p95_ms": 2337.55
+        },
+        {
+          "period": "2026-10-09T08:00:00Z",
+          "count": 299,
+          "avg_ms": 595.592,
+          "p95_ms": 3071.9
+        },
+        {
+          "period": "2026-10-09T09:00:00Z",
+          "count": 290,
+          "avg_ms": 416.4655,
+          "p95_ms": 2138.6
+        },
+        {
+          "period": "2026-10-09T10:00:00Z",
+          "count": 300,
+          "avg_ms": 519.49,
+          "p95_ms": 2352.7
+        },
+        {
+          "period": "2026-10-09T11:00:00Z",
+          "count": 293,
+          "avg_ms": 351.3891,
+          "p95_ms": 1609.8
+        },
+        {
+          "period": "2026-10-09T12:00:00Z",
+          "count": 283,
+          "avg_ms": 406.5336,
+          "p95_ms": 2083.2
+        },
+        {
+          "period": "2026-10-09T13:00:00Z",
+          "count": 304,
+          "avg_ms": 456.8586,
+          "p95_ms": 2263.8
+        },
+        {
+          "period": "2026-10-09T14:00:00Z",
+          "count": 296,
+          "avg_ms": 451.3345,
+          "p95_ms": 2326.5
+        },
+        {
+          "period": "2026-10-09T15:00:00Z",
+          "count": 297,
+          "avg_ms": 436.6667,
+          "p95_ms": 2261.2
+        },
+        {
+          "period": "2026-10-09T16:00:00Z",
+          "count": 287,
+          "avg_ms": 469.9965,
+          "p95_ms": 2408.7
+        },
+        {
+          "period": "2026-10-09T17:00:00Z",
+          "count": 308,
+          "avg_ms": 597.2987,
+          "p95_ms": 3686.85
+        },
+        {
+          "period": "2026-10-09T18:00:00Z",
+          "count": 314,
+          "avg_ms": 473.6752,
+          "p95_ms": 2608.55
+        },
+        {
+          "period": "2026-10-09T19:00:00Z",
+          "count": 312,
+          "avg_ms": 451.7019,
+          "p95_ms": 2492.45
+        },
+        {
+          "period": "2026-10-09T20:00:00Z",
+          "count": 311,
+          "avg_ms": 527.8296,
+          "p95_ms": 2906.0
+        },
+        {
+          "period": "2026-10-09T21:00:00Z",
+          "count": 301,
+          "avg_ms": 375.3023,
+          "p95_ms": 1752.0
+        },
+        {
+          "period": "2026-10-09T22:00:00Z",
+          "count": 289,
+          "avg_ms": 488.5709,
+          "p95_ms": 2399.0
+        },
+        {
+          "period": "2026-10-09T23:00:00Z",
+          "count": 275,
+          "avg_ms": 397.2545,
+          "p95_ms": 2103.1
+        },
+        {
+          "period": "2026-10-10T00:00:00Z",
+          "count": 299,
+          "avg_ms": 369.9298,
+          "p95_ms": 1444.3
+        },
+        {
+          "period": "2026-10-10T01:00:00Z",
+          "count": 300,
+          "avg_ms": 616.3733,
+          "p95_ms": 2887.2
+        },
+        {
+          "period": "2026-10-10T02:00:00Z",
+          "count": 288,
+          "avg_ms": 433.1042,
+          "p95_ms": 2209.4
+        },
+        {
+          "period": "2026-10-10T03:00:00Z",
+          "count": 324,
+          "avg_ms": 431.0926,
+          "p95_ms": 1864.0
+        },
+        {
+          "period": "2026-10-10T04:00:00Z",
+          "count": 298,
+          "avg_ms": 426.104,
+          "p95_ms": 2083.75
+        },
+        {
+          "period": "2026-10-10T05:00:00Z",
+          "count": 295,
+          "avg_ms": 492.878,
+          "p95_ms": 2335.6
+        },
+        {
+          "period": "2026-10-10T06:00:00Z",
+          "count": 284,
+          "avg_ms": 466.6655,
+          "p95_ms": 2512.35
+        },
+        {
+          "period": "2026-10-10T07:00:00Z",
+          "count": 302,
+          "avg_ms": 457.7417,
+          "p95_ms": 2443.6
+        },
+        {
+          "period": "2026-10-10T08:00:00Z",
+          "count": 308,
+          "avg_ms": 579.5097,
+          "p95_ms": 3089.65
+        },
+        {
+          "period": "2026-10-10T09:00:00Z",
+          "count": 306,
+          "avg_ms": 538.6895,
+          "p95_ms": 2737.5
+        },
+        {
+          "period": "2026-10-10T10:00:00Z",
+          "count": 278,
+          "avg_ms": 491.5,
+          "p95_ms": 2484.9
+        },
+        {
+          "period": "2026-10-10T11:00:00Z",
+          "count": 308,
+          "avg_ms": 426.8247,
+          "p95_ms": 2095.05
+        },
+        {
+          "period": "2026-10-10T12:00:00Z",
+          "count": 308,
+          "avg_ms": 502.737,
+          "p95_ms": 2791.4
+        },
+        {
+          "period": "2026-10-10T13:00:00Z",
+          "count": 298,
+          "avg_ms": 500.104,
+          "p95_ms": 2479.9
+        },
+        {
+          "period": "2026-10-10T14:00:00Z",
+          "count": 297,
+          "avg_ms": 529.202,
+          "p95_ms": 2844.6
+        },
+        {
+          "period": "2026-10-10T15:00:00Z",
+          "count": 293,
+          "avg_ms": 518.6621,
+          "p95_ms": 2496.4
+        },
+        {
+          "period": "2026-10-10T16:00:00Z",
+          "count": 291,
+          "avg_ms": 549.6323,
+          "p95_ms": 2507.0
+        },
+        {
+          "period": "2026-10-10T17:00:00Z",
+          "count": 293,
+          "avg_ms": 517.9078,
+          "p95_ms": 2914.2
+        },
+        {
+          "period": "2026-10-10T18:00:00Z",
+          "count": 281,
+          "avg_ms": 470.6975,
+          "p95_ms": 2388.0
+        },
+        {
+          "period": "2026-10-10T19:00:00Z",
+          "count": 290,
+          "avg_ms": 541.3448,
+          "p95_ms": 2683.45
+        },
+        {
+          "period": "2026-10-10T20:00:00Z",
+          "count": 301,
+          "avg_ms": 422.8106,
+          "p95_ms": 2103.0
+        },
+        {
+          "period": "2026-10-10T21:00:00Z",
+          "count": 298,
+          "avg_ms": 434.1477,
+          "p95_ms": 2006.65
+        },
+        {
+          "period": "2026-10-10T22:00:00Z",
+          "count": 300,
+          "avg_ms": 664.2767,
+          "p95_ms": 3375.25
+        },
+        {
+          "period": "2026-10-10T23:00:00Z",
+          "count": 315,
+          "avg_ms": 527.381,
+          "p95_ms": 2824.7
+        },
+        {
+          "period": "2026-10-11T00:00:00Z",
+          "count": 301,
+          "avg_ms": 420.9767,
+          "p95_ms": 2269.0
+        },
+        {
+          "period": "2026-10-11T01:00:00Z",
+          "count": 299,
+          "avg_ms": 542.0769,
+          "p95_ms": 2619.9
+        },
+        {
+          "period": "2026-10-11T02:00:00Z",
+          "count": 303,
+          "avg_ms": 569.4422,
+          "p95_ms": 2704.4
+        },
+        {
+          "period": "2026-10-11T03:00:00Z",
+          "count": 287,
+          "avg_ms": 529.115,
+          "p95_ms": 2936.3
+        },
+        {
+          "period": "2026-10-11T04:00:00Z",
+          "count": 292,
+          "avg_ms": 484.2329,
+          "p95_ms": 2584.75
+        },
+        {
+          "period": "2026-10-11T05:00:00Z",
+          "count": 293,
+          "avg_ms": 565.3072,
+          "p95_ms": 2334.4
+        },
+        {
+          "period": "2026-10-11T06:00:00Z",
+          "count": 295,
+          "avg_ms": 405.7017,
+          "p95_ms": 1981.2
+        },
+        {
+          "period": "2026-10-11T07:00:00Z",
+          "count": 282,
+          "avg_ms": 483.3511,
+          "p95_ms": 2400.9
+        },
+        {
+          "period": "2026-10-11T08:00:00Z",
+          "count": 300,
+          "avg_ms": 494.72,
+          "p95_ms": 2374.3
+        },
+        {
+          "period": "2026-10-11T09:00:00Z",
+          "count": 313,
+          "avg_ms": 545.869,
+          "p95_ms": 2689.6
+        },
+        {
+          "period": "2026-10-11T10:00:00Z",
+          "count": 295,
+          "avg_ms": 583.6,
+          "p95_ms": 3268.7
+        },
+        {
+          "period": "2026-10-11T11:00:00Z",
+          "count": 302,
+          "avg_ms": 559.0861,
+          "p95_ms": 2588.5
+        },
+        {
+          "period": "2026-10-11T12:00:00Z",
+          "count": 290,
+          "avg_ms": 476.5586,
+          "p95_ms": 2281.25
+        },
+        {
+          "period": "2026-10-11T13:00:00Z",
+          "count": 284,
+          "avg_ms": 438.8275,
+          "p95_ms": 2546.05
+        },
+        {
+          "period": "2026-10-11T14:00:00Z",
+          "count": 292,
+          "avg_ms": 485.6473,
+          "p95_ms": 2186.4
+        },
+        {
+          "period": "2026-10-11T15:00:00Z",
+          "count": 302,
+          "avg_ms": 600.2185,
+          "p95_ms": 2866.8
+        },
+        {
+          "period": "2026-10-11T16:00:00Z",
+          "count": 318,
+          "avg_ms": 450.1855,
+          "p95_ms": 2156.55
+        },
+        {
+          "period": "2026-10-11T17:00:00Z",
+          "count": 287,
+          "avg_ms": 604.0035,
+          "p95_ms": 2806.4
+        },
+        {
+          "period": "2026-10-11T18:00:00Z",
+          "count": 320,
+          "avg_ms": 482.6906,
+          "p95_ms": 2888.85
+        },
+        {
+          "period": "2026-10-11T19:00:00Z",
+          "count": 311,
+          "avg_ms": 529.5305,
+          "p95_ms": 2742.0
+        },
+        {
+          "period": "2026-10-11T20:00:00Z",
+          "count": 281,
+          "avg_ms": 536.5979,
+          "p95_ms": 2888.0
+        },
+        {
+          "period": "2026-10-11T21:00:00Z",
+          "count": 292,
+          "avg_ms": 465.4178,
+          "p95_ms": 2518.25
+        },
+        {
+          "period": "2026-10-11T22:00:00Z",
+          "count": 308,
+          "avg_ms": 512.3247,
+          "p95_ms": 2768.5
+        },
+        {
+          "period": "2026-10-11T23:00:00Z",
+          "count": 291,
+          "avg_ms": 532.6323,
+          "p95_ms": 2502.0
+        },
+        {
+          "period": "2026-10-12T00:00:00Z",
+          "count": 301,
+          "avg_ms": 575.8206,
+          "p95_ms": 3362.0
+        },
+        {
+          "period": "2026-10-12T01:00:00Z",
+          "count": 288,
+          "avg_ms": 614.0243,
+          "p95_ms": 3618.25
+        },
+        {
+          "period": "2026-10-12T02:00:00Z",
+          "count": 293,
+          "avg_ms": 554.1195,
+          "p95_ms": 2786.6
+        },
+        {
+          "period": "2026-10-12T03:00:00Z",
+          "count": 300,
+          "avg_ms": 413.9533,
+          "p95_ms": 1970.8
+        },
+        {
+          "period": "2026-10-12T04:00:00Z",
+          "count": 296,
+          "avg_ms": 465.527,
+          "p95_ms": 2403.25
+        },
+        {
+          "period": "2026-10-12T05:00:00Z",
+          "count": 327,
+          "avg_ms": 540.5749,
+          "p95_ms": 2997.0
+        },
+        {
+          "period": "2026-10-12T06:00:00Z",
+          "count": 282,
+          "avg_ms": 526.1312,
+          "p95_ms": 2776.5
+        },
+        {
+          "period": "2026-10-12T07:00:00Z",
+          "count": 294,
+          "avg_ms": 372.5986,
+          "p95_ms": 1614.25
+        },
+        {
+          "period": "2026-10-12T08:00:00Z",
+          "count": 287,
+          "avg_ms": 496.0488,
+          "p95_ms": 2437.3
+        },
+        {
+          "period": "2026-10-12T09:00:00Z",
+          "count": 296,
+          "avg_ms": 411.9088,
+          "p95_ms": 1903.25
+        },
+        {
+          "period": "2026-10-12T10:00:00Z",
+          "count": 278,
+          "avg_ms": 431.7914,
+          "p95_ms": 1934.1
+        },
+        {
+          "period": "2026-10-12T11:00:00Z",
+          "count": 308,
+          "avg_ms": 509.6201,
+          "p95_ms": 2439.0
+        },
+        {
+          "period": "2026-10-12T12:00:00Z",
+          "count": 288,
+          "avg_ms": 597.8264,
+          "p95_ms": 2797.3
+        },
+        {
+          "period": "2026-10-12T13:00:00Z",
+          "count": 299,
+          "avg_ms": 573.4381,
+          "p95_ms": 2931.1
+        },
+        {
+          "period": "2026-10-12T14:00:00Z",
+          "count": 279,
+          "avg_ms": 483.4731,
+          "p95_ms": 2542.0
+        },
+        {
+          "period": "2026-10-12T15:00:00Z",
+          "count": 287,
+          "avg_ms": 555.9582,
+          "p95_ms": 2585.8
+        },
+        {
+          "period": "2026-10-12T16:00:00Z",
+          "count": 294,
+          "avg_ms": 528.0102,
+          "p95_ms": 3034.1
+        },
+        {
+          "period": "2026-10-12T17:00:00Z",
+          "count": 306,
+          "avg_ms": 565.9804,
+          "p95_ms": 2626.0
+        },
+        {
+          "period": "2026-10-12T18:00:00Z",
+          "count": 290,
+          "avg_ms": 549.1241,
+          "p95_ms": 2814.1
+        },
+        {
+          "period": "2026-10-12T19:00:00Z",
+          "count": 272,
+          "avg_ms": 508.0368,
+          "p95_ms": 2985.3
+        },
+        {
+          "period": "2026-10-12T20:00:00Z",
+          "count": 311,
+          "avg_ms": 529.4212,
+          "p95_ms": 2543.5
+        },
+        {
+          "period": "2026-10-12T21:00:00Z",
+          "count": 301,
+          "avg_ms": 554.5847,
+          "p95_ms": 2519.0
+        },
+        {
+          "period": "2026-10-12T22:00:00Z",
+          "count": 291,
+          "avg_ms": 399.0619,
+          "p95_ms": 2068.5
+        },
+        {
+          "period": "2026-10-12T23:00:00Z",
+          "count": 289,
+          "avg_ms": 598.8408,
+          "p95_ms": 3261.0
+        },
+        {
+          "period": "2026-10-13T00:00:00Z",
+          "count": 299,
+          "avg_ms": 485.9933,
+          "p95_ms": 2729.4
+        },
+        {
+          "period": "2026-10-13T01:00:00Z",
+          "count": 301,
+          "avg_ms": 529.8206,
+          "p95_ms": 2828.0
+        },
+        {
+          "period": "2026-10-13T02:00:00Z",
+          "count": 292,
+          "avg_ms": 469.0959,
+          "p95_ms": 2458.9
+        },
+        {
+          "period": "2026-10-13T03:00:00Z",
+          "count": 287,
+          "avg_ms": 597.8258,
+          "p95_ms": 3063.3
+        },
+        {
+          "period": "2026-10-13T04:00:00Z",
+          "count": 295,
+          "avg_ms": 483.5356,
+          "p95_ms": 2274.1
+        },
+        {
+          "period": "2026-10-13T05:00:00Z",
+          "count": 289,
+          "avg_ms": 506.9827,
+          "p95_ms": 2384.6
+        },
+        {
+          "period": "2026-10-13T06:00:00Z",
+          "count": 291,
+          "avg_ms": 493.1031,
+          "p95_ms": 2107.0
+        },
+        {
+          "period": "2026-10-13T07:00:00Z",
+          "count": 291,
+          "avg_ms": 550.4124,
+          "p95_ms": 3257.5
+        },
+        {
+          "period": "2026-10-13T08:00:00Z",
+          "count": 304,
+          "avg_ms": 452.7961,
+          "p95_ms": 2138.65
+        },
+        {
+          "period": "2026-10-13T09:00:00Z",
+          "count": 307,
+          "avg_ms": 560.3062,
+          "p95_ms": 2732.6
+        },
+        {
+          "period": "2026-10-13T10:00:00Z",
+          "count": 308,
+          "avg_ms": 372.7987,
+          "p95_ms": 1544.85
+        },
+        {
+          "period": "2026-10-13T11:00:00Z",
+          "count": 284,
+          "avg_ms": 630.0035,
+          "p95_ms": 3285.1
+        },
+        {
+          "period": "2026-10-13T12:00:00Z",
+          "count": 303,
+          "avg_ms": 608.9571,
+          "p95_ms": 3179.2
+        },
+        {
+          "period": "2026-10-13T13:00:00Z",
+          "count": 283,
+          "avg_ms": 514.8269,
+          "p95_ms": 2428.7
+        },
+        {
+          "period": "2026-10-13T14:00:00Z",
+          "count": 312,
+          "avg_ms": 456.0705,
+          "p95_ms": 2215.95
+        },
+        {
+          "period": "2026-10-13T15:00:00Z",
+          "count": 291,
+          "avg_ms": 573.3368,
+          "p95_ms": 2732.0
+        },
+        {
+          "period": "2026-10-13T16:00:00Z",
+          "count": 301,
+          "avg_ms": 590.6113,
+          "p95_ms": 3040.0
+        },
+        {
+          "period": "2026-10-13T17:00:00Z",
+          "count": 293,
+          "avg_ms": 429.2218,
+          "p95_ms": 2231.6
+        },
+        {
+          "period": "2026-10-13T18:00:00Z",
+          "count": 282,
+          "avg_ms": 463.2553,
+          "p95_ms": 2239.25
+        },
+        {
+          "period": "2026-10-13T19:00:00Z",
+          "count": 311,
+          "avg_ms": 515.8424,
+          "p95_ms": 2534.0
+        },
+        {
+          "period": "2026-10-13T20:00:00Z",
+          "count": 304,
+          "avg_ms": 459.8586,
+          "p95_ms": 2141.0
+        },
+        {
+          "period": "2026-10-13T21:00:00Z",
+          "count": 303,
+          "avg_ms": 471.7558,
+          "p95_ms": 2449.7
+        },
+        {
+          "period": "2026-10-13T22:00:00Z",
+          "count": 297,
+          "avg_ms": 420.0,
+          "p95_ms": 2112.4
+        },
+        {
+          "period": "2026-10-13T23:00:00Z",
+          "count": 292,
+          "avg_ms": 459.411,
+          "p95_ms": 2284.95
+        },
+        {
+          "period": "2026-10-14T00:00:00Z",
+          "count": 318,
+          "avg_ms": 503.6981,
+          "p95_ms": 2262.85
+        },
+        {
+          "period": "2026-10-14T01:00:00Z",
+          "count": 271,
+          "avg_ms": 430.1033,
+          "p95_ms": 2006.0
+        },
+        {
+          "period": "2026-10-14T02:00:00Z",
+          "count": 299,
+          "avg_ms": 459.1773,
+          "p95_ms": 2144.5
+        },
+        {
+          "period": "2026-10-14T03:00:00Z",
+          "count": 304,
+          "avg_ms": 450.8158,
+          "p95_ms": 2650.35
+        },
+        {
+          "period": "2026-10-14T04:00:00Z",
+          "count": 329,
+          "avg_ms": 476.4529,
+          "p95_ms": 2425.4
+        },
+        {
+          "period": "2026-10-14T05:00:00Z",
+          "count": 298,
+          "avg_ms": 622.4128,
+          "p95_ms": 3154.65
+        },
+        {
+          "period": "2026-10-14T06:00:00Z",
+          "count": 318,
+          "avg_ms": 546.3176,
+          "p95_ms": 2802.6
+        },
+        {
+          "period": "2026-10-14T07:00:00Z",
+          "count": 289,
+          "avg_ms": 492.0623,
+          "p95_ms": 2016.0
+        },
+        {
+          "period": "2026-10-14T08:00:00Z",
+          "count": 289,
+          "avg_ms": 431.4602,
+          "p95_ms": 2573.4
+        },
+        {
+          "period": "2026-10-14T09:00:00Z",
+          "count": 308,
+          "avg_ms": 508.276,
+          "p95_ms": 2569.55
+        },
+        {
+          "period": "2026-10-14T10:00:00Z",
+          "count": 292,
+          "avg_ms": 481.2226,
+          "p95_ms": 2302.8
+        },
+        {
+          "period": "2026-10-14T11:00:00Z",
+          "count": 283,
+          "avg_ms": 594.0318,
+          "p95_ms": 2752.0
+        },
+        {
+          "period": "2026-10-14T12:00:00Z",
+          "count": 311,
+          "avg_ms": 426.4277,
+          "p95_ms": 2297.0
+        },
+        {
+          "period": "2026-10-14T13:00:00Z",
+          "count": 284,
+          "avg_ms": 403.9472,
+          "p95_ms": 1872.3
+        },
+        {
+          "period": "2026-10-14T14:00:00Z",
+          "count": 311,
+          "avg_ms": 470.701,
+          "p95_ms": 2242.5
+        },
+        {
+          "period": "2026-10-14T15:00:00Z",
+          "count": 309,
+          "avg_ms": 481.7055,
+          "p95_ms": 2587.2
+        },
+        {
+          "period": "2026-10-14T16:00:00Z",
+          "count": 294,
+          "avg_ms": 537.0204,
+          "p95_ms": 2905.1
+        },
+        {
+          "period": "2026-10-14T17:00:00Z",
+          "count": 305,
+          "avg_ms": 479.2262,
+          "p95_ms": 2178.0
+        },
+        {
+          "period": "2026-10-14T18:00:00Z",
+          "count": 278,
+          "avg_ms": 507.964,
+          "p95_ms": 2834.45
+        },
+        {
+          "period": "2026-10-14T19:00:00Z",
+          "count": 295,
+          "avg_ms": 518.9153,
+          "p95_ms": 2641.5
+        },
+        {
+          "period": "2026-10-14T20:00:00Z",
+          "count": 307,
+          "avg_ms": 524.2443,
+          "p95_ms": 2635.2
+        },
+        {
+          "period": "2026-10-14T21:00:00Z",
+          "count": 283,
+          "avg_ms": 411.1731,
+          "p95_ms": 1776.3
+        },
+        {
+          "period": "2026-10-14T22:00:00Z",
+          "count": 306,
+          "avg_ms": 519.2386,
+          "p95_ms": 2469.75
+        },
+        {
+          "period": "2026-10-14T23:00:00Z",
+          "count": 310,
+          "avg_ms": 458.3226,
+          "p95_ms": 2560.8
+        },
+        {
+          "period": "2026-10-15T00:00:00Z",
+          "count": 300,
+          "avg_ms": 487.4367,
+          "p95_ms": 2261.0
+        },
+        {
+          "period": "2026-10-15T01:00:00Z",
+          "count": 305,
+          "avg_ms": 474.5803,
+          "p95_ms": 2426.8
+        },
+        {
+          "period": "2026-10-15T02:00:00Z",
+          "count": 295,
+          "avg_ms": 485.4068,
+          "p95_ms": 2355.2
+        },
+        {
+          "period": "2026-10-15T03:00:00Z",
+          "count": 306,
+          "avg_ms": 529.049,
+          "p95_ms": 2763.0
+        },
+        {
+          "period": "2026-10-15T04:00:00Z",
+          "count": 310,
+          "avg_ms": 518.0742,
+          "p95_ms": 2444.75
+        },
+        {
+          "period": "2026-10-15T05:00:00Z",
+          "count": 311,
+          "avg_ms": 432.3794,
+          "p95_ms": 2101.5
+        },
+        {
+          "period": "2026-10-15T06:00:00Z",
+          "count": 280,
+          "avg_ms": 525.6179,
+          "p95_ms": 2653.05
+        },
+        {
+          "period": "2026-10-15T07:00:00Z",
+          "count": 293,
+          "avg_ms": 531.3311,
+          "p95_ms": 2849.0
+        },
+        {
+          "period": "2026-10-15T08:00:00Z",
+          "count": 286,
+          "avg_ms": 463.4965,
+          "p95_ms": 2732.0
+        },
+        {
+          "period": "2026-10-15T09:00:00Z",
+          "count": 299,
+          "avg_ms": 366.5886,
+          "p95_ms": 1714.4
+        },
+        {
+          "period": "2026-10-15T10:00:00Z",
+          "count": 294,
+          "avg_ms": 605.4932,
+          "p95_ms": 3018.3
+        },
+        {
+          "period": "2026-10-15T11:00:00Z",
+          "count": 308,
+          "avg_ms": 487.9058,
+          "p95_ms": 2689.25
+        },
+        {
+          "period": "2026-10-15T12:00:00Z",
+          "count": 327,
+          "avg_ms": 470.5902,
+          "p95_ms": 2126.2
+        },
+        {
+          "period": "2026-10-15T13:00:00Z",
+          "count": 306,
+          "avg_ms": 481.0359,
+          "p95_ms": 2524.75
+        },
+        {
+          "period": "2026-10-15T14:00:00Z",
+          "count": 291,
+          "avg_ms": 427.2715,
+          "p95_ms": 2219.0
+        },
+        {
+          "period": "2026-10-15T15:00:00Z",
+          "count": 295,
+          "avg_ms": 498.9797,
+          "p95_ms": 2656.9
+        },
+        {
+          "period": "2026-10-15T16:00:00Z",
+          "count": 299,
+          "avg_ms": 522.4181,
+          "p95_ms": 2665.5
+        },
+        {
+          "period": "2026-10-15T17:00:00Z",
+          "count": 292,
+          "avg_ms": 543.3219,
+          "p95_ms": 2778.05
+        },
+        {
+          "period": "2026-10-15T18:00:00Z",
+          "count": 310,
+          "avg_ms": 400.0452,
+          "p95_ms": 1783.85
+        },
+        {
+          "period": "2026-10-15T19:00:00Z",
+          "count": 305,
+          "avg_ms": 491.3279,
+          "p95_ms": 2321.6
+        },
+        {
+          "period": "2026-10-15T20:00:00Z",
+          "count": 306,
+          "avg_ms": 467.219,
+          "p95_ms": 2628.5
+        },
+        {
+          "period": "2026-10-15T21:00:00Z",
+          "count": 286,
+          "avg_ms": 528.2587,
+          "p95_ms": 2523.75
+        },
+        {
+          "period": "2026-10-15T22:00:00Z",
+          "count": 285,
+          "avg_ms": 479.1754,
+          "p95_ms": 2162.6
+        },
+        {
+          "period": "2026-10-15T23:00:00Z",
+          "count": 310,
+          "avg_ms": 411.5419,
+          "p95_ms": 2225.1
+        },
+        {
+          "period": "2026-10-16T00:00:00Z",
+          "count": 302,
+          "avg_ms": 527.9702,
+          "p95_ms": 2940.85
+        },
+        {
+          "period": "2026-10-16T01:00:00Z",
+          "count": 302,
+          "avg_ms": 535.8212,
+          "p95_ms": 3091.4
+        },
+        {
+          "period": "2026-10-16T02:00:00Z",
+          "count": 299,
+          "avg_ms": 594.6656,
+          "p95_ms": 2930.3
+        },
+        {
+          "period": "2026-10-16T03:00:00Z",
+          "count": 287,
+          "avg_ms": 637.8606,
+          "p95_ms": 2980.6
+        },
+        {
+          "period": "2026-10-16T04:00:00Z",
+          "count": 289,
+          "avg_ms": 498.1799,
+          "p95_ms": 2650.6
+        },
+        {
+          "period": "2026-10-16T05:00:00Z",
+          "count": 289,
+          "avg_ms": 618.0104,
+          "p95_ms": 3133.4
+        },
+        {
+          "period": "2026-10-16T06:00:00Z",
+          "count": 314,
+          "avg_ms": 457.6752,
+          "p95_ms": 2467.15
+        },
+        {
+          "period": "2026-10-16T07:00:00Z",
+          "count": 296,
+          "avg_ms": 471.0405,
+          "p95_ms": 2438.5
+        },
+        {
+          "period": "2026-10-16T08:00:00Z",
+          "count": 295,
+          "avg_ms": 581.7288,
+          "p95_ms": 2895.5
+        },
+        {
+          "period": "2026-10-16T09:00:00Z",
+          "count": 277,
+          "avg_ms": 635.2816,
+          "p95_ms": 3628.4
+        },
+        {
+          "period": "2026-10-16T10:00:00Z",
+          "count": 308,
+          "avg_ms": 548.4968,
+          "p95_ms": 3267.2
+        },
+        {
+          "period": "2026-10-16T11:00:00Z",
+          "count": 301,
+          "avg_ms": 578.5781,
+          "p95_ms": 3057.0
+        },
+        {
+          "period": "2026-10-16T12:00:00Z",
+          "count": 306,
+          "avg_ms": 461.1275,
+          "p95_ms": 2459.25
+        },
+        {
+          "period": "2026-10-16T13:00:00Z",
+          "count": 295,
+          "avg_ms": 523.0678,
+          "p95_ms": 2418.1
+        },
+        {
+          "period": "2026-10-16T14:00:00Z",
+          "count": 305,
+          "avg_ms": 426.0066,
+          "p95_ms": 1861.2
+        },
+        {
+          "period": "2026-10-16T15:00:00Z",
+          "count": 323,
+          "avg_ms": 392.0062,
+          "p95_ms": 1903.1
+        },
+        {
+          "period": "2026-10-16T16:00:00Z",
+          "count": 291,
+          "avg_ms": 521.9485,
+          "p95_ms": 2902.0
+        },
+        {
+          "period": "2026-10-16T17:00:00Z",
+          "count": 294,
+          "avg_ms": 535.7993,
+          "p95_ms": 2930.0
+        },
+        {
+          "period": "2026-10-16T18:00:00Z",
+          "count": 281,
+          "avg_ms": 371.3345,
+          "p95_ms": 1695.0
+        },
+        {
+          "period": "2026-10-16T19:00:00Z",
+          "count": 304,
+          "avg_ms": 448.6447,
+          "p95_ms": 2482.25
+        },
+        {
+          "period": "2026-10-16T20:00:00Z",
+          "count": 289,
+          "avg_ms": 434.2284,
+          "p95_ms": 2384.6
+        },
+        {
+          "period": "2026-10-16T21:00:00Z",
+          "count": 273,
+          "avg_ms": 456.3883,
+          "p95_ms": 2149.4
+        },
+        {
+          "period": "2026-10-16T22:00:00Z",
+          "count": 58,
+          "avg_ms": 434.569,
+          "p95_ms": 929.2
+        }
+      ]
+    }
+  },
+  "reconciliation_summary": {
+    "internal_checks_passed": true,
+    "expected_results_passed": true
+  }
+}

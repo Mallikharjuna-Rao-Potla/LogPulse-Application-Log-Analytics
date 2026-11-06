@@ -1,0 +1,110 @@
+[
+  {
+    "dataset": "sample",
+    "mode": "baseline",
+    "records": 100,
+    "inserted": 84,
+    "duplicates": 2,
+    "rejected": 14,
+    "processing_seconds": 0.006,
+    "records_per_second": 18150,
+    "peak_rss_mb": 66.5,
+    "status": "SUCCESS"
+  },
+  {
+    "dataset": "sample",
+    "mode": "batched_db",
+    "records": 100,
+    "inserted": 84,
+    "duplicates": 2,
+    "rejected": 14,
+    "processing_seconds": 0.005,
+    "records_per_second": 19039,
+    "peak_rss_mb": 66.5,
+    "status": "SUCCESS"
+  },
+  {
+    "dataset": "sample",
+    "mode": "optimised",
+    "records": 100,
+    "inserted": 84,
+    "duplicates": 2,
+    "rejected": 14,
+    "processing_seconds": 0.005,
+    "records_per_second": 21558,
+    "peak_rss_mb": 66.3,
+    "status": "SUCCESS"
+  },
+  {
+    "dataset": "10k",
+    "mode": "baseline",
+    "records": 10000,
+    "inserted": 8771,
+    "duplicates": 200,
+    "rejected": 1029,
+    "processing_seconds": 0.434,
+    "records_per_second": 23060,
+    "peak_rss_mb": 85.6,
+    "status": "SUCCESS"
+  },
+  {
+    "dataset": "10k",
+    "mode": "batched_db",
+    "records": 10000,
+    "inserted": 8771,
+    "duplicates": 200,
+    "rejected": 1029,
+    "processing_seconds": 0.405,
+    "records_per_second": 24690,
+    "peak_rss_mb": 85.4,
+    "status": "SUCCESS"
+  },
+  {
+    "dataset": "10k",
+    "mode": "optimised",
+    "records": 10000,
+    "inserted": 8771,
+    "duplicates": 200,
+    "rejected": 1029,
+    "processing_seconds": 0.388,
+    "records_per_second": 25801,
+    "peak_rss_mb": 85.5,
+    "status": "SUCCESS"
+  },
+  {
+    "dataset": "100k",
+    "mode": "baseline",
+    "records": 100000,
+    "inserted": 87710,
+    "duplicates": 2000,
+    "rejected": 10290,
+    "processing_seconds": 4.369,
+    "records_per_second": 22888,
+    "peak_rss_mb": 238.0,
+    "status": "SUCCESS"
+  },
+  {
+    "dataset": "100k",
+    "mode": "batched_db",
+    "records": 100000,
+    "inserted": 87710,
+    "duplicates": 2000,
+    "rejected": 10290,
+    "processing_seconds": 4.467,
+    "records_per_second": 22388,
+    "peak_rss_mb": 238.5,
+    "status": "SUCCESS"
+  },
+  {
+    "dataset": "100k",
+    "mode": "optimised",
+    "records": 100000,
+    "inserted": 87710,
+    "duplicates": 2000,
+    "rejected": 10290,
+    "processing_seconds": 3.909,
+    "records_per_second": 25584,
+    "peak_rss_mb": 231.4,
+    "status": "SUCCESS"
+  }
+]

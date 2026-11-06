@@ -1,0 +1,48 @@
+$ python run_pipeline.py --reset-db        # FIRST run on an empty database
+================================================================
+ LogPulse run run_20261106T031439Z_a8ce6015  ->  SUCCESS
+================================================================
+ Files             : 2 processed, 0 failed, 0 skipped
+ Input records     : 100
+ Inserted          : 84
+ Duplicates        : 2
+ Rejected          : 14   (quarantined; see rejected_logs.csv)
+ Late / out-of-order: 2 / 6
+ Processing time   : 0.00s  (21,616 records/s)
+ Valid logs in DB  : 84   error rate 11.9048%   avg latency 611.4815 ms   P95 3598.0 ms
+ Reconciliation    : internal checks PASS (16/16)
+ Expected results  : PASS (54/54 checks vs ground truth)
+ Outputs in        : /home/claude/LogPulse/data/outputs
+================================================================
+$ python run_pipeline.py               # SECOND run, identical input (idempotency proof)
+================================================================
+ LogPulse run run_20261106T031440Z_38c08839  ->  SUCCESS
+================================================================
+ Files             : 2 processed, 0 failed, 0 skipped
+ Input records     : 100
+ Inserted          : 0
+ Duplicates        : 86
+ Rejected          : 14   (quarantined; see rejected_logs.csv)
+ Late / out-of-order: 0 / 0
+ Processing time   : 0.00s  (23,776 records/s)
+ Valid logs in DB  : 84   error rate 11.9048%   avg latency 611.4815 ms   P95 3598.0 ms
+ Reconciliation    : internal checks PASS (16/16)
+ Expected results  : PASS (52/52 checks vs ground truth)
+ Outputs in        : /home/claude/LogPulse/data/outputs
+================================================================
+$ python run_pipeline.py --skip-processed   # THIRD run: files recognised by checksum and skipped
+================================================================
+ LogPulse run run_20261106T031441Z_9d510829  ->  SUCCESS
+================================================================
+ Files             : 0 processed, 0 failed, 2 skipped
+ Input records     : 0
+ Inserted          : 0
+ Duplicates        : 0
+ Rejected          : 0   (quarantined; see rejected_logs.csv)
+ Late / out-of-order: 0 / 0
+ Processing time   : 0.00s  (0 records/s)
+ Valid logs in DB  : 84   error rate 11.9048%   avg latency 611.4815 ms   P95 3598.0 ms
+ Reconciliation    : internal checks PASS (16/16)
+ Expected results  : PASS (36/36 checks vs ground truth)
+ Outputs in        : /home/claude/LogPulse/data/outputs
+================================================================

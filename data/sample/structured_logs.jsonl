@@ -1,0 +1,75 @@
+{"event_id":"EVT-SAMPLE-000001","timestamp":"2026-10-01T00:00:19Z","severity":"INFO","service_name":"orders","message":"Order status updated","latency_ms":134}
+{"event_id":"EVT-SAMPLE-000002","timestamp":"2026-10-01T00:00:32Z","severity":"WARNING","service_name":"inventory","message":"Low stock detected","latency_ms":645}
+{"event_id":"EVT-SAMPLE-000003","timestamp":"2026-10-01T09:00:38+09:00","severity":"INFO","service_name":"orders","message":"Order status updated","latency_ms":147}
+{"event_id":"EVT-SAMPLE-000007","timestamp":"2026-10-01T00:01:35Z","severity":"WARN","service_name":"auth","message":"Session nearing expiry","latency_ms":"438"}
+{"event_id":"EVT-SAMPLE-000006","timestamp":"2026-10-01T00:01:18Z","severity":"INFO","service_name":"gateway","message":"Health check passed","latency_ms":120}
+{"event_id":"EVT-SAMPLE-000004","timestamp":"2026-10-01T00:00:54Z","severity":"WARN","service_name":"inventory","message":"Stock mismatch detected","latency_ms":254}
+{"event_id":"EVT-SAMPLE-000008","timestamp":"2026-10-01T00:01:43Z","severity":"info","service_name":"notifications","message":"Push notification delivered","latency_ms":80}
+{"event_id":"EVT-SAMPLE-000009","timestamp":"2026-10-01T00:01:52Z","severity":"INFO","service_name":"orders","message":"Order shipped","latency_ms":94}
+{"event_id":"EVT-SAMPLE-000010","timestamp":"2026-10-01T00:02:02Z","severity":"INFO","service_name":"orders","message":"Order status updated","latency_ms":72}
+{"event_id":"EVT-SAMPLE-000011","timestamp":"2026-10-01T00:02:11Z","severity":"INFO","service_name":"inventory","message":"Warehouse sync completed","latency_ms":87}
+{"event_id":"EVT-SAMPLE-000012","timestamp":"2026-10-01T00:02:23Z","severity":"INFO","service_name":"orders","message":"Order created","latency_ms":211}
+{"event_id":"EVT-SAMPLE-000013","timestamp":"2026-10-01T00:02:29Z","severity":"INFO","service_name":"orders","message":"Order status updated","latency_ms":17}
+{"event_id":"EVT-SAMPLE-000014","timestamp":"2026-10-01T00:02:40Z","severity":"INFO","service_name":"inventory","message":"Warehouse sync completed","latency_ms":113}
+{"event_id":"EVT-SAMPLE-000015","timestamp":"2026-10-01T00:02:49Z","severity":"WARNING","service_name":"auth","message":"Multipl
+{"event_id":"EVT-SAMPLE-000016","timestamp":"2026-10-01T00:03:09Z","severity":"INFO","service_name":"orders","message":"Order shipped","latency_ms":209}
+{"event_id":"EVT-SAMPLE-000017","timestamp":"2026-10-01T00:03:15Z","severity":"NOTICE","service_name":"gateway","message":"High memory usage","latency_ms":298}
+{"event_id":"EVT-SAMPLE-000018","timestamp":"2026-10-01T00:03:26Z","severity":"INFO","service_name":"search","message":"Search query completed","latency_ms":224}
+{"event_id":"EVT-SAMPLE-000019","timestamp":"2026-10-01 00:03:30","severity":"INFO","service_name":"auth","message":"Token refreshed","latency_ms":89}
+{"event_id":"EVT-SAMPLE-000020","timestamp":"2026-10-01T00:03:38Z","severity":"WARNING","service_name":"orders","message":"Order processing delayed","latency_ms":280}
+{"event_id":"EVT-SAMPLE-000021","timestamp":"2026-10-01T00:03:53Z","severity":"INFO","service_name":"orders","message":"Order status updated"}
+{"event_id":"EVT-SAMPLE-000022","timestamp":"2026-10-01T00:04:07Z","severity":"INFO","service_name":"gateway","message":"Request routed","latency_ms":98}
+{"event_id":"EVT-SAMPLE-000023","timestamp":"2026-10-01T00:04:13Z","severity":"INFO","service_name":"mailer","message":"Health check passed","latency_ms":90}
+{"event_id":"EVT-SAMPLE-000024","timestamp":"2026-09-30T16:04:27-08:00","severity":"INFO","service_name":"search","message":"Index refreshed","latency_ms":104}
+{"event_id":"EVT-SAMPLE-000025","timestamp":"2026-10-01T00:04:44Z","severity":"WARNING","service_name":"gateway","message":"High memory usage","latency_ms":255}
+{"event_id":"EVT-SAMPLE-000026","timestamp":"2026-10-01T00:04:45Z","severity":"Info","service_name":"gateway","message":"Health check passed","latency_ms":"abc"}
+{"event_id":"EVT-SAMPLE-000027","timestamp":"2026-10-01T00:04:52Z","severity":"CRITICAL","service_name":"payment","message":"Ledger write failure","latency_ms":6176}
+{"event_id":"EVT-SAMPLE-000028","timestamp":"2026-10-01T00:05:10Z","severity":"WARNING","service_name":"NOTIFICATIONS","message":"Delivery retry scheduled","latency_ms":373}
+{"event_id":"EVT-SAMPLE-000031","timestamp":"2026-10-01T09:05:53+09:00","severity":"info","service_name":"inventory","message":"Item reserved","latency_ms":99}
+{"event_id":"EVT-SAMPLE-000032","timestamp":"2026-10-01T00:06:04Z","severity":"INFO","service_name":"gateway","message":"Health check passed","latency_ms":108}
+{"event_id":"EVT-SAMPLE-000033","timestamp":"11-05-2026","severity":"WARNING","service_name":"gateway","message":"High memory usage","latency_ms":397}
+{"event_id":"EVT-SAMPLE-000034","timestamp":"2026-10-01T00:06:15Z","severity":"INFO","service_name":"auth","message":"Token refreshed","latency_ms":36}
+{"event_id":"EVT-SAMPLE-000035","timestamp":"2026-10-01T00:06:26Z","severity":"INFO","service_name":"orders","message":"Order shipped","latency_ms":81}
+{"event_id":"EVT-SAMPLE-000038","timestamp":"2026-10-01T00:07:12Z","severity":"INFO","service_name":"gateway","message":"Health check passed","latency_ms":118}
+{"event_id":"EVT-SAMPLE-000039","timestamp":"2026-10-01T00:07:32Z","severity":"critical","service_name":"auth","message":"Authentication service down","latency_ms":3412}
+{"event_id":"EVT-SAMPLE-000040","timestamp":"2026-10-01T00:07:36Z","severity":"INFO","service_name":"inventory","message":"Warehouse sync completed","latency_ms":116}
+{"event_id":"EVT-SAMPLE-000041","timestamp":"2026-10-01T00:07:38Z","severity":"INFO","service_name":"gateway","message":"Request routed","latency_ms":34}
+{"event_id":"EVT-SAMPLE-000042","timestamp":"2026-10-01 00:07:43","severity":"INFO","service_name":"auth","message":"Token refreshed","latency_ms":109}
+{"event_id":"EVT-SAMPLE-000043","timestamp":"2026-10-01T00:08:03Z","severity":"INFO","service_name":"auth","message":"User login successful"}
+{"event_id":"EVT-SAMPLE-000044","timestamp":"2026-10-01T00:08:21Z","severity":"info","service_name":"orders","message":"Order shipped","latency_ms":144}
+{"event_id":"EVT-SAMPLE-000046","timestamp":"2026-10-01T00:08:34Z","severity":"INFO","service_name":"auth","message":"Token refreshed","latency_ms":"130"}
+{"event_id":"EVT-SAMPLE-000047","timestamp":"2026-10-01T00:08:37.552Z","severity":"WARNING","service_name":"gateway","message":"High memory usage","latency_ms":329}
+{"event_id":"EVT-SAMPLE-000049","timestamp":"2026-10-01T00:08:43Z","severity":"WARNING","service_name":"payment","message":"Retry attempt scheduled","latency_ms":789}
+{"event_id":"EVT-SAMPLE-000052","timestamp":"2026-10-01T00:09:20Z","severity":"INFO","service_name":"gateway","message":"Request routed","latency_ms":108}
+{"event_id":"EVT-SAMPLE-000051","timestamp":"2026-10-01T00:09:00Z","severity":"CRITICAL","service_name":"payment","message":"Ledger write failure","latency_ms":5432}
+{"event_id":"id/with/slash","timestamp":"2026-10-01T00:09:29Z","severity":"ERROR","service_name":"search","message":"Shard unavailable","latency_ms":3701}
+{"metric":"cpu","host":"srv1"}
+{"event_id":"EVT-SAMPLE-000057","timestamp":"2026-10-01T00:10:20Z","service_name":"inventory","message":"Warehouse sync completed","latency_ms":125}
+{"event_id":"EVT-SAMPLE-000058","timestamp":"2026-10-01T00:10:38Z","severity":"INFO","service_name":"auth","message":"Token refreshed","latency_ms":89}
+{"event_id":"EVT-SAMPLE-000059","timestamp":"2026-10-01T00:10:54Z","severity":"info","service_name":"auth","message":"User logout successful","latency_ms":98}
+{"event_id":"EVT-SAMPLE-000061","timestamp":"2026-10-01T00:11:15Z","severity":"Info","service_name":"notifications","message":"Email notification sent","latency_ms":"60"}
+{"event_id":"EVT-SAMPLE-000012","timestamp":"2026-10-01T00:02:23Z","severity":"INFO","service_name":"orders","message":"Order created","latency_ms":211}
+{"event_id":"EVT-SAMPLE-000062","timestamp":"2026-10-01T00:11:28Z","severity":"INFO","service_name":"orders","message":"Order shipped","latency_ms":158}
+{"event_id":null,"timestamp":"2026-10-01T00:11:43Z","severity":"INFO","service_name":"gateway","message":"Request routed  ","latency_ms":51}
+{"event_id":"EVT-SAMPLE-000065","timestamp":"2026-10-01 00:12:10","severity":"WARN","service_name":"gateway","message":"Rate limit nearing threshold","latency_ms":175}
+{"event_id":"EVT-SAMPLE-000067","timestamp":"2026-10-01T00:12:27Z","severity":"INFO","service_name":"auth","message":"User login successful","latency_ms":157}
+{"event_id":"EVT-SAMPLE-000069","timestamp":"2026-10-01T00:12:56Z","severity":"error","service_name":"auth","message":"Invalid token signature","latency_ms":2746}
+{"event_id":"EVT-SAMPLE-000068","timestamp":"2026-10-01T00:12:41Z","severity":"INFO","service_name":"gateway","message":"Health check passed","latency_ms":82}
+{"event_id":"EVT-SAMPLE-000070","timestamp":"2026-10-01T00:13:07Z","severity":"INFO","service_name":"gateway","message":"Request routed","latency_ms":60}
+{"event_id":"EVT-SAMPLE-000071","timestamp":"2026-10-01T00:13:10Z","severity":"INFO","service_name":"auth","message":"User login successful","latency_ms":45}
+{"event_id":"EVT-SAMPLE-000072","timestamp":"2026-10-01T00:13:11Z","severity":"WARNING","service_name":"gateway","message":"Rate limit nearing threshold","latency_ms":432}
+{"event_id":"EVT-SAMPLE-000073","timestamp":"2026-10-01T00:13:16Z","severity":"INFO","service_name":"search","message":"Search query completed","latency_ms":99}
+{"event_id":"EVT-SAMPLE-000074","timestamp":"2026-10-01T00:13:18Z","severity":"CRITICAL","service_name":"orders","message":"Order service crashed","latency_ms":2433}
+{"event_id":"EVT-SAMPLE-000075","timestamp":"2026-10-01T00:13:34.719Z","severity":"INFO","service_name":"orders","message":"Order created","latency_ms":100}
+{"event_id":"EVT-SAMPLE-000076","timestamp":"   ","severity":"INFO","service_name":"gateway","message":"Health check passed","latency_ms":110}
+{"event_id":"EVT-SAMPLE-000077","timestamp":"2026-10-01T00:13:58Z","severity":"INFO","service_name":"orders","message":"Order created","latency_ms":201}
+{"event_id":"EVT-SAMPLE-000078","timestamp":"2026-10-01T00:14:06Z","severity":"INFO","service_name":"notifications","message":"Email notification sent","latency_ms":105}
+{"event_id":"EVT-SAMPLE-000079","timestamp":"2026-10-01T00:14:10Z","severity":"WARNING","service_name":"search","message":"Slow query detected","latency_ms":441}
+{"event_id":"EVT-SAMPLE-000080","timestamp":"2026-10-01T00:14:26.984Z","severity":"INFO","service_name":"inventory","message":"Stock level synced","latency_ms":64}
+{"event_id":"EVT-SAMPLE-000081","timestamp":"2026-10-01T00:14:31Z","severity":"INFO","service_name":"auth","message":"User login successful","latency_ms":163}
+{"event_id":"EVT-SAMPLE-000082","timestamp":"2026-10-01 00:14:39","severity":"INFO","service_name":"orders","message":"Order created","latency_ms":71}
+{"event_id":"EVT-SAMPLE-000084","timestamp":"2026-10-01T00:15:16Z","severity":"INFO","service_name":"inventory","message":"Item reserved","latency_ms":66}
+{"event_id":"EVT-SAMPLE-000087","timestamp":"2026-10-01T00:15:41Z","severity":"WARNING","service_name":"payment","message":"Slow response from card processor  ","latency_ms":77277268}
+{"event_id":"EVT-SAMPLE-000090","timestamp":"2026-10-01T00:16:21Z","severity":"INFO","service_name":"orders","message":"Order shipped","latency_ms":149}
+{"event_id":"EVT-SAMPLE-000093","timestamp":"2026-10-01T00:16:44Z","severity":"INFO","service_name":"orders","message":"Order status updated","latency_ms":100}
+{"event_id":"EVT-SAMPLE-000062","timestamp":"2026-10-01T00:11:28Z","severity":"INFO","service_name":"orders","message":"Order shipped","latency_ms":158}

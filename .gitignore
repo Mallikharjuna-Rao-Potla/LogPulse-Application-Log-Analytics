@@ -1,0 +1,12 @@
+# runtime artefacts
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+logs/
+database/*.db
+database/*.db-wal
+database/*.db-shm
+.DS_Store
+*.egg-info/

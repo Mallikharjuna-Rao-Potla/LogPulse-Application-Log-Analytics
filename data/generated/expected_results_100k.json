@@ -1,0 +1,201 @@
+{
+  "dataset": "100k",
+  "generator_version": "1.0",
+  "seed": 42,
+  "note": "Ground truth computed by the generator from its own labels, independent of the pipeline.",
+  "input_records": 100000,
+  "json_records": 71021,
+  "text_records": 28979,
+  "outcomes": {
+    "inserted": 87710,
+    "duplicates": 2000,
+    "rejected": 10290
+  },
+  "rejected_by_reason": {
+    "INVALID_EVENT_ID": 490,
+    "INVALID_LATENCY_TYPE": 490,
+    "INVALID_SEVERITY": 980,
+    "INVALID_TIMESTAMP": 1470,
+    "LATENCY_EXCEEDS_MAX": 490,
+    "MISSING_EVENT_ID": 490,
+    "MISSING_MESSAGE": 490,
+    "MISSING_SERVICE_NAME": 490,
+    "MISSING_SEVERITY": 490,
+    "MISSING_TIMESTAMP": 490,
+    "NEGATIVE_LATENCY": 980,
+    "PARSE_ERROR_MALFORMED_JSON": 991,
+    "PARSE_ERROR_UNEXPECTED_FORMAT": 479,
+    "UNEXPECTED_SCHEMA": 490,
+    "UNKNOWN_SERVICE": 980
+  },
+  "late_records": 1960,
+  "out_of_order_records": 6384,
+  "database_state": {
+    "total_logs": 87710,
+    "severity_counts": {
+      "INFO": 60363,
+      "WARNING": 15888,
+      "ERROR": 8301,
+      "CRITICAL": 3158
+    },
+    "error_count": 11459,
+    "error_rate_pct": 13.0646,
+    "error_rate_by_service": {
+      "auth": {
+        "total": 19060,
+        "errors": 2077,
+        "error_rate_pct": 10.8972
+      },
+      "payment": {
+        "total": 12407,
+        "errors": 2765,
+        "error_rate_pct": 22.2858
+      },
+      "inventory": {
+        "total": 8831,
+        "errors": 1010,
+        "error_rate_pct": 11.437
+      },
+      "orders": {
+        "total": 14156,
+        "errors": 1538,
+        "error_rate_pct": 10.8647
+      },
+      "notifications": {
+        "total": 8812,
+        "errors": 966,
+        "error_rate_pct": 10.9623
+      },
+      "search": {
+        "total": 6922,
+        "errors": 716,
+        "error_rate_pct": 10.3438
+      },
+      "gateway": {
+        "total": 17522,
+        "errors": 2387,
+        "error_rate_pct": 13.6229
+      }
+    },
+    "latency": {
+      "count": 85027,
+      "avg_ms": 498.5578,
+      "min_ms": 1.0,
+      "max_ms": 13322.0,
+      "p50_ms": 144.0,
+      "p95_ms": 2558.7,
+      "by_service": {
+        "auth": {
+          "count": 18491,
+          "avg_ms": 386.9399,
+          "min_ms": 1.0,
+          "max_ms": 8177.0,
+          "p50_ms": 126.0,
+          "p95_ms": 1979.0
+        },
+        "payment": {
+          "count": 12012,
+          "avg_ms": 983.7986,
+          "min_ms": 1.0,
+          "max_ms": 13322.0,
+          "p50_ms": 231.0,
+          "p95_ms": 4393.9
+        },
+        "inventory": {
+          "count": 8571,
+          "avg_ms": 438.8953,
+          "min_ms": 1.0,
+          "max_ms": 8072.0,
+          "p50_ms": 143.0,
+          "p95_ms": 2246.0
+        },
+        "orders": {
+          "count": 13723,
+          "avg_ms": 429.0345,
+          "min_ms": 1.0,
+          "max_ms": 9115.0,
+          "p50_ms": 142.0,
+          "p95_ms": 2220.0
+        },
+        "notifications": {
+          "count": 8534,
+          "avg_ms": 434.1057,
+          "min_ms": 1.0,
+          "max_ms": 9474.0,
+          "p50_ms": 143.0,
+          "p95_ms": 2210.4
+        },
+        "search": {
+          "count": 6728,
+          "avg_ms": 494.7377,
+          "min_ms": 1.0,
+          "max_ms": 9967.0,
+          "p50_ms": 170.0,
+          "p95_ms": 2579.9
+        },
+        "gateway": {
+          "count": 16968,
+          "avg_ms": 396.9776,
+          "min_ms": 1.0,
+          "max_ms": 6785.0,
+          "p50_ms": 119.0,
+          "p95_ms": 1980.3
+        }
+      }
+    },
+    "daily": {
+      "2026-10-04": {
+        "total": 16,
+        "errors": 1
+      },
+      "2026-10-05": {
+        "total": 7349,
+        "errors": 944
+      },
+      "2026-10-06": {
+        "total": 7281,
+        "errors": 968
+      },
+      "2026-10-07": {
+        "total": 7324,
+        "errors": 1021
+      },
+      "2026-10-08": {
+        "total": 7351,
+        "errors": 912
+      },
+      "2026-10-09": {
+        "total": 7372,
+        "errors": 891
+      },
+      "2026-10-10": {
+        "total": 7379,
+        "errors": 964
+      },
+      "2026-10-11": {
+        "total": 7346,
+        "errors": 1005
+      },
+      "2026-10-12": {
+        "total": 7266,
+        "errors": 987
+      },
+      "2026-10-13": {
+        "total": 7375,
+        "errors": 976
+      },
+      "2026-10-14": {
+        "total": 7428,
+        "errors": 970
+      },
+      "2026-10-15": {
+        "total": 7406,
+        "errors": 949
+      },
+      "2026-10-16": {
+        "total": 6817,
+        "errors": 871
+      }
+    }
+  }
+}

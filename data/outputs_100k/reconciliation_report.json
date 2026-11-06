@@ -1,0 +1,571 @@
+{
+  "run_id": "run_20261106T110838Z_9f291514",
+  "status": "SUCCESS",
+  "source_to_target": {
+    "input_records": 100000,
+    "inserted": 87710,
+    "duplicates": 2000,
+    "rejected": 10290
+  },
+  "internal_checks": [
+    {
+      "check": "input_records == inserted + duplicates + rejected",
+      "expected": 100000,
+      "actual": 100000,
+      "passed": true
+    },
+    {
+      "check": "parsed_records + parse_failures == input_records",
+      "expected": 100000,
+      "actual": 100000,
+      "passed": true
+    },
+    {
+      "check": "rows added to processed_logs == inserted_records",
+      "expected": 87710,
+      "actual": 87710,
+      "passed": true
+    },
+    {
+      "check": "quarantine rows written/ignored == rejected_records",
+      "expected": 10290,
+      "actual": 10290,
+      "passed": true
+    },
+    {
+      "check": "processed_logs.csv rows == processed_logs table",
+      "expected": 87710,
+      "actual": 87710,
+      "passed": true
+    },
+    {
+      "check": "rejected_logs.csv rows == rejected_logs table",
+      "expected": 10290,
+      "actual": 10290,
+      "passed": true
+    },
+    {
+      "check": "sum(rejected_by_reason) >= rejected_records",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "check": "severity count INFO: pandas == SQL",
+      "expected": 60363,
+      "actual": 60363,
+      "passed": true
+    },
+    {
+      "check": "severity count WARNING: pandas == SQL",
+      "expected": 15888,
+      "actual": 15888,
+      "passed": true
+    },
+    {
+      "check": "severity count ERROR: pandas == SQL",
+      "expected": 8301,
+      "actual": 8301,
+      "passed": true
+    },
+    {
+      "check": "severity count CRITICAL: pandas == SQL",
+      "expected": 3158,
+      "actual": 3158,
+      "passed": true
+    },
+    {
+      "check": "sum(severity counts) == total valid logs",
+      "expected": 87710,
+      "actual": 87710,
+      "passed": true
+    },
+    {
+      "check": "latency count: pandas == SQL",
+      "expected": 85027,
+      "actual": 85027,
+      "passed": true
+    },
+    {
+      "check": "latency avg: pandas == SQL",
+      "expected": 498.5578,
+      "actual": 498.5578,
+      "passed": true
+    },
+    {
+      "check": "latency min: pandas == SQL",
+      "expected": 1.0,
+      "actual": 1.0,
+      "passed": true
+    },
+    {
+      "check": "latency max: pandas == SQL",
+      "expected": 13322.0,
+      "actual": 13322.0,
+      "passed": true
+    }
+  ],
+  "internal_checks_passed": true,
+  "expected_results_checks": [
+    {
+      "check": "expected: input records",
+      "expected": 100000,
+      "actual": 100000,
+      "passed": true
+    },
+    {
+      "check": "expected: inserted + duplicates",
+      "expected": 89710,
+      "actual": 89710,
+      "passed": true
+    },
+    {
+      "check": "expected: rejected records",
+      "expected": 10290,
+      "actual": 10290,
+      "passed": true
+    },
+    {
+      "check": "expected: rejected by INVALID_EVENT_ID",
+      "expected": 490,
+      "actual": 490,
+      "passed": true
+    },
+    {
+      "check": "expected: rejected by INVALID_LATENCY_TYPE",
+      "expected": 490,
+      "actual": 490,
+      "passed": true
+    },
+    {
+      "check": "expected: rejected by INVALID_SEVERITY",
+      "expected": 980,
+      "actual": 980,
+      "passed": true
+    },
+    {
+      "check": "expected: rejected by INVALID_TIMESTAMP",
+      "expected": 1470,
+      "actual": 1470,
+      "passed": true
+    },
+    {
+      "check": "expected: rejected by LATENCY_EXCEEDS_MAX",
+      "expected": 490,
+      "actual": 490,
+      "passed": true
+    },
+    {
+      "check": "expected: rejected by MISSING_EVENT_ID",
+      "expected": 490,
+      "actual": 490,
+      "passed": true
+    },
+    {
+      "check": "expected: rejected by MISSING_MESSAGE",
+      "expected": 490,
+      "actual": 490,
+      "passed": true
+    },
+    {
+      "check": "expected: rejected by MISSING_SERVICE_NAME",
+      "expected": 490,
+      "actual": 490,
+      "passed": true
+    },
+    {
+      "check": "expected: rejected by MISSING_SEVERITY",
+      "expected": 490,
+      "actual": 490,
+      "passed": true
+    },
+    {
+      "check": "expected: rejected by MISSING_TIMESTAMP",
+      "expected": 490,
+      "actual": 490,
+      "passed": true
+    },
+    {
+      "check": "expected: rejected by NEGATIVE_LATENCY",
+      "expected": 980,
+      "actual": 980,
+      "passed": true
+    },
+    {
+      "check": "expected: rejected by PARSE_ERROR_MALFORMED_JSON",
+      "expected": 991,
+      "actual": 991,
+      "passed": true
+    },
+    {
+      "check": "expected: rejected by PARSE_ERROR_UNEXPECTED_FORMAT",
+      "expected": 479,
+      "actual": 479,
+      "passed": true
+    },
+    {
+      "check": "expected: rejected by UNEXPECTED_SCHEMA",
+      "expected": 490,
+      "actual": 490,
+      "passed": true
+    },
+    {
+      "check": "expected: rejected by UNKNOWN_SERVICE",
+      "expected": 980,
+      "actual": 980,
+      "passed": true
+    },
+    {
+      "check": "expected: late records",
+      "expected": 1960,
+      "actual": 1960,
+      "passed": true
+    },
+    {
+      "check": "expected: out-of-order records",
+      "expected": 6384,
+      "actual": 6384,
+      "passed": true
+    },
+    {
+      "check": "expected: total valid logs",
+      "expected": 87710,
+      "actual": 87710,
+      "passed": true
+    },
+    {
+      "check": "expected: INFO count",
+      "expected": 60363,
+      "actual": 60363,
+      "passed": true
+    },
+    {
+      "check": "expected: WARNING count",
+      "expected": 15888,
+      "actual": 15888,
+      "passed": true
+    },
+    {
+      "check": "expected: ERROR count",
+      "expected": 8301,
+      "actual": 8301,
+      "passed": true
+    },
+    {
+      "check": "expected: CRITICAL count",
+      "expected": 3158,
+      "actual": 3158,
+      "passed": true
+    },
+    {
+      "check": "expected: error count",
+      "expected": 11459,
+      "actual": 11459,
+      "passed": true
+    },
+    {
+      "check": "expected: error rate %",
+      "expected": 13.0646,
+      "actual": 13.0646,
+      "passed": true
+    },
+    {
+      "check": "expected: error rate % [auth]",
+      "expected": 10.8972,
+      "actual": 10.8972,
+      "passed": true
+    },
+    {
+      "check": "expected: error rate % [payment]",
+      "expected": 22.2858,
+      "actual": 22.2858,
+      "passed": true
+    },
+    {
+      "check": "expected: error rate % [inventory]",
+      "expected": 11.437,
+      "actual": 11.437,
+      "passed": true
+    },
+    {
+      "check": "expected: error rate % [orders]",
+      "expected": 10.8647,
+      "actual": 10.8647,
+      "passed": true
+    },
+    {
+      "check": "expected: error rate % [notifications]",
+      "expected": 10.9623,
+      "actual": 10.9623,
+      "passed": true
+    },
+    {
+      "check": "expected: error rate % [search]",
+      "expected": 10.3438,
+      "actual": 10.3438,
+      "passed": true
+    },
+    {
+      "check": "expected: error rate % [gateway]",
+      "expected": 13.6229,
+      "actual": 13.6229,
+      "passed": true
+    },
+    {
+      "check": "expected: latency count",
+      "expected": 85027,
+      "actual": 85027,
+      "passed": true
+    },
+    {
+      "check": "expected: latency avg_ms",
+      "expected": 498.5578,
+      "actual": 498.5578,
+      "passed": true
+    },
+    {
+      "check": "expected: latency min_ms",
+      "expected": 1.0,
+      "actual": 1.0,
+      "passed": true
+    },
+    {
+      "check": "expected: latency max_ms",
+      "expected": 13322.0,
+      "actual": 13322.0,
+      "passed": true
+    },
+    {
+      "check": "expected: latency p50_ms",
+      "expected": 144.0,
+      "actual": 144.0,
+      "passed": true
+    },
+    {
+      "check": "expected: latency p95_ms",
+      "expected": 2558.7,
+      "actual": 2558.7,
+      "passed": true
+    },
+    {
+      "check": "expected: latency avg_ms [auth]",
+      "expected": 386.9399,
+      "actual": 386.9399,
+      "passed": true
+    },
+    {
+      "check": "expected: latency p95_ms [auth]",
+      "expected": 1979.0,
+      "actual": 1979.0,
+      "passed": true
+    },
+    {
+      "check": "expected: latency avg_ms [payment]",
+      "expected": 983.7986,
+      "actual": 983.7986,
+      "passed": true
+    },
+    {
+      "check": "expected: latency p95_ms [payment]",
+      "expected": 4393.9,
+      "actual": 4393.9,
+      "passed": true
+    },
+    {
+      "check": "expected: latency avg_ms [inventory]",
+      "expected": 438.8953,
+      "actual": 438.8953,
+      "passed": true
+    },
+    {
+      "check": "expected: latency p95_ms [inventory]",
+      "expected": 2246.0,
+      "actual": 2246.0,
+      "passed": true
+    },
+    {
+      "check": "expected: latency avg_ms [orders]",
+      "expected": 429.0345,
+      "actual": 429.0345,
+      "passed": true
+    },
+    {
+      "check": "expected: latency p95_ms [orders]",
+      "expected": 2220.0,
+      "actual": 2220.0,
+      "passed": true
+    },
+    {
+      "check": "expected: latency avg_ms [notifications]",
+      "expected": 434.1057,
+      "actual": 434.1057,
+      "passed": true
+    },
+    {
+      "check": "expected: latency p95_ms [notifications]",
+      "expected": 2210.4,
+      "actual": 2210.4,
+      "passed": true
+    },
+    {
+      "check": "expected: latency avg_ms [search]",
+      "expected": 494.7377,
+      "actual": 494.7377,
+      "passed": true
+    },
+    {
+      "check": "expected: latency p95_ms [search]",
+      "expected": 2579.9,
+      "actual": 2579.9,
+      "passed": true
+    },
+    {
+      "check": "expected: latency avg_ms [gateway]",
+      "expected": 396.9776,
+      "actual": 396.9776,
+      "passed": true
+    },
+    {
+      "check": "expected: latency p95_ms [gateway]",
+      "expected": 1980.3,
+      "actual": 1980.3,
+      "passed": true
+    },
+    {
+      "check": "expected: daily totals/errors trend",
+      "expected": {
+        "2026-10-04": [
+          16,
+          1
+        ],
+        "2026-10-05": [
+          7349,
+          944
+        ],
+        "2026-10-06": [
+          7281,
+          968
+        ],
+        "2026-10-07": [
+          7324,
+          1021
+        ],
+        "2026-10-08": [
+          7351,
+          912
+        ],
+        "2026-10-09": [
+          7372,
+          891
+        ],
+        "2026-10-10": [
+          7379,
+          964
+        ],
+        "2026-10-11": [
+          7346,
+          1005
+        ],
+        "2026-10-12": [
+          7266,
+          987
+        ],
+        "2026-10-13": [
+          7375,
+          976
+        ],
+        "2026-10-14": [
+          7428,
+          970
+        ],
+        "2026-10-15": [
+          7406,
+          949
+        ],
+        "2026-10-16": [
+          6817,
+          871
+        ]
+      },
+      "actual": {
+        "2026-10-04": [
+          16,
+          1
+        ],
+        "2026-10-05": [
+          7349,
+          944
+        ],
+        "2026-10-06": [
+          7281,
+          968
+        ],
+        "2026-10-07": [
+          7324,
+          1021
+        ],
+        "2026-10-08": [
+          7351,
+          912
+        ],
+        "2026-10-09": [
+          7372,
+          891
+        ],
+        "2026-10-10": [
+          7379,
+          964
+        ],
+        "2026-10-11": [
+          7346,
+          1005
+        ],
+        "2026-10-12": [
+          7266,
+          987
+        ],
+        "2026-10-13": [
+          7375,
+          976
+        ],
+        "2026-10-14": [
+          7428,
+          970
+        ],
+        "2026-10-15": [
+          7406,
+          949
+        ],
+        "2026-10-16": [
+          6817,
+          871
+        ]
+      },
+      "passed": true
+    }
+  ],
+  "expected_results_passed": true,
+  "expected_results_file": "C:\\Users\\Bandla\\Desktop\\YottaFlex\\LogPulse\\LogPulse\\data\\generated\\expected_results_100k.json",
+  "file_results": [
+    {
+      "file": "logs_100k.jsonl",
+      "status": "PROCESSED",
+      "sha256": "e33209037927092503a7054c21715c7b1305d8294eb27f5e233718e60f4a316b",
+      "records": 71021,
+      "inserted": 61646,
+      "duplicates": 1432,
+      "rejected": 7943,
+      "already_seen_checksum": false
+    },
+    {
+      "file": "logs_100k.txt",
+      "status": "PROCESSED",
+      "sha256": "627b8bb27befe402842a5f1fbbf315b92711c3d67bbf1d488f12d8d95e311164",
+      "records": 28979,
+      "inserted": 26064,
+      "duplicates": 568,
+      "rejected": 2347,
+      "already_seen_checksum": false
+    }
+  ]
+}
